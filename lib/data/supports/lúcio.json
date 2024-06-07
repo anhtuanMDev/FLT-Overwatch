@@ -1,0 +1,77 @@
+{
+    "name": "Lúcio", "role": "Support", "image": "assets/images/portraits/lúcio.png",
+    "total": "200", "normal": "200", "armor": "0", "shield": "0", "speed": "5.5m/s",
+    "abilities": [
+      {
+        "name": "Wall Ride",
+        "key": "Passive",
+        "iconUrl": "assets/images/skills/supports/lúcio/icon.png",
+        "description": "Jump onto a wall while holding space to ride along it. Lúcio receives a burst of speed when leaping off a wall.",
+        "stats": [
+          {"name": "Movespeed", "value": "+30%"},
+          {"name": "Leap Bonus", "value": "+2.5m/s"},
+          {"name": "Cooldown", "value": "0.5s"}
+        ]
+      },
+      {
+        "name": "Sonic Amplifier",
+        "key": "Left Click",
+        "iconUrl": "assets/images/skills/supports/lúcio/1.png",
+        "description": "Sonic projectile launcher. Can headshot.",
+        "stats": [
+          {"name": "Damage", "value": "20"},
+          {"name": "Fire Rate", "value": "4.44 rps"},
+          {"name": "Ammo", "value": "20"},
+          {"name": "Reload", "value": "1.5s"}
+        ]
+      },
+      {
+        "name": "Soundwave",
+        "key": "Right Click",
+        "iconUrl": "assets/images/skills/supports/lúcio/2.png",
+        "description": "Lúcio creates a short-range blast wave knock enemies away. Cannot headshot.",
+        "stats": [
+          {"name": "Damage", "value": "25"},
+          {"name": "Range", "value": "8m"},
+          {"name": "Cooldown", "value": "4s"}
+        ]
+      },
+      {
+        "name": "Crossfade",
+        "key": "Shift to switch songs",
+        "iconUrl": "assets/images/skills/supports/lúcio/Shift.png",
+        "description": "Lúcio continuously energizes himself — and nearby teammates within line-of-sight — with music. He can switch between two songs: one amplifies movement speed, while the other regenerates health. The switch can be done while reloading.",
+        "stats": [
+          {"name": "Heal Rate(hp/s)", "value": "16 (allies)\n10 (self)"},
+          {"name": "Speed", "value": "+25%"},
+          {"name": "Radius", "value": "12m"},
+          {"name": "Cast Time", "value": "0.2s"},
+          {"name": "Cooldown", "value": "0.4s"}
+        ]
+      },
+      {
+        "name": "Amp It Up",
+        "key": "E",
+        "iconUrl": "assets/images/skills/supports/lúcio/E.png",
+        "description": "Lúcio increases the volume on his speakers, boosting the effects of his songs.",
+        "stats": [
+          {"name": "Heal Rate(hp/s)", "value": "52"},
+          {"name": "Speed", "value": "+60%"},
+          {"name": "Duration", "value": "3s"},
+          {"name": "Cooldown", "value": "12s"}
+        ]
+      },
+      {
+        "name": "Sound Barrier",
+        "key": "Q",
+        "iconUrl": "assets/images/skills/supports/lúcio/Q.png",
+        "description": "Protective waves radiate out from Lúcio’s Sonic Amplifier, briefly providing him and nearby allies with overhealth.",
+        "stats": [
+          {"name": "Health", "value": "+750 overhealth"},
+          {"name": "Overhealth Decay", "value": "-125 hp/s"},
+          {"name": "Radius", "value": "30m"},
+          {"name": "Duration", "value": "6s"}
+        ]
+      }
+    ]
+  }

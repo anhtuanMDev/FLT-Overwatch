@@ -1,0 +1,74 @@
+{
+    "name": "Kiriko", "role": "Support", "image": "assets/images/portraits/kiriko.png",
+    "total": "200", "normal": "200", "armor": "0", "shield": "0", "speed": "5.5m/s",
+    "abilities": [
+      {
+        "name": "Wall Climb",
+        "key": "Passive",
+        "iconUrl": "assets/images/skills/supports/kiriko/Passive.png",
+        "description": "Jump at walls to climb up them.",
+        "stats": []
+      },
+      {
+        "name": "Healing Ofuda",
+        "key": "Left Click",
+        "iconUrl": "assets/images/skills/supports/kiriko/1.png",
+        "description": "Channel a burst of healing talismans that can seek targeted allies.",
+        "stats": [
+          {"name": "Heal", "value": "13"},
+          {"name": "Fire Rate (rps)", "value": "10"},
+          {"name": "Reload", "value": "0.9s"},
+          {"name": "Ammo", "value": "10"}
+        ]
+      },
+      {
+        "name": "Kunai",
+        "key": "Right Click",
+        "iconUrl": "assets/images/skills/supports/kiriko/2.png",
+        "description": "Thrown projectile that deals increased critical damage.",
+        "stats": [
+          {"name": "Bodyshot", "value": "45"},
+          {"name": "Headshot", "value": "2.5x"},
+          {"name": "Fire Rate", "value": "2 rps"},
+          {"name": "Ammo", "value": "15"},
+          {"name": "Reload", "value": "1s"}
+        ]
+      },
+      {
+        "name": "Swift Step",
+        "key": "Shift",
+        "iconUrl": "assets/images/skills/supports/kiriko/Shift.png",
+        "description": "Teleport directly to an ally, even through walls.",
+        "stats": [
+          {"name": "Cast Time", "value": "~0.2s"},
+          {"name": "Duration", "value": "0.25s invulnerable"},
+          {"name": "Cooldown", "value": "7s"}
+        ]
+      },
+      {
+        "name": "Protection Suzu",
+        "key": "E",
+        "iconUrl": "assets/images/skills/supports/kiriko/E.png",
+        "description": "Throw a protective charm to make allies become briefly invulnerable and cleansed of most negative effects.",
+        "stats": [
+          {"name": "Heal", "value": "80 (no cleanse)\n110 (cleanse)"},
+          {"name": "Cast Time", "value": "0.1s"},
+          {"name": "Duration", "value": "0.65s"},
+          {"name": "Cooldown", "value": "15s"}
+        ]
+      },
+      {
+        "name": "Kitsune Rush",
+        "key": "Q",
+        "iconUrl": "assets/images/skills/supports/kiriko/Q.png",
+        "description": "Summon a fox spirit that rushes forward, accelerating the movement, attack speed, and cooldowns of allies that follow in its path.",
+        "stats": [
+          {"name": "Mov. Speed", "value": "+30%"},
+          {"name": "Fire Rate", "value": "+50%"},
+          {"name": "Reload Speed", "value": "+50%"},
+          {"name": "Cooldown", "value": "-50%"},
+          {"name": "Duration", "value": "10.5s"}
+        ]
+      }
+    ]
+  }

@@ -1,6 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:herometrics/components/card/heroNameCard.dart';
 import 'package:herometrics/data/heroes.dart';
+import 'package:herometrics/pages/heroDetail.dart';
+import 'package:herometrics/pages/map_page.dart';
 import 'package:herometrics/pages/search.dart';
 import 'package:herometrics/models/hero_model.dart';
 
@@ -22,12 +24,14 @@ class _HomeState extends State<Home> {
     agent.sort((a, b) => a.name.compareTo(b.name));
   }
 
+  //Change agent in specific role visible on ui
   void changeCategory(int index) {
     setState(() {
       category = index;
     });
   }
 
+  //Change agent visible on ui
   void updateAgent(String role) {
     switch (role) {
       case 'All Roles':
@@ -96,7 +100,6 @@ class _HomeState extends State<Home> {
       ),
       drawer: Drawer(
         child: ListView(
-          // Important: Remove any padding from the ListView.
           padding: EdgeInsets.zero,
           children: [
             DrawerHeader(
@@ -133,13 +136,10 @@ class _HomeState extends State<Home> {
                   Text('Heroes'),
                 ],
               ),
-              onTap: () {
-                // Update the state of the app.
-                // ...
-              },
+              onTap: () {},
             ),
             ListTile(
-              title: const Row(
+              title: Row(
                 children: [
                   Padding(
                     padding: EdgeInsets.only(right: 8.0),
@@ -149,8 +149,9 @@ class _HomeState extends State<Home> {
                 ],
               ),
               onTap: () {
-                // Update the state of the app.
-                // ...
+                Navigator.pop(context);
+                Navigator.push(context,
+                    MaterialPageRoute(builder: (context) => MapPage()));
               },
             ),
             ListTile(
@@ -163,10 +164,7 @@ class _HomeState extends State<Home> {
                   Text('Game Mode'),
                 ],
               ),
-              onTap: () {
-                // Update the state of the app.
-                // ...
-              },
+              onTap: () {},
             ),
             ListTile(
               title: const Row(
@@ -178,10 +176,7 @@ class _HomeState extends State<Home> {
                   Text('Patch note'),
                 ],
               ),
-              onTap: () {
-                // Update the state of the app.
-                // ...
-              },
+              onTap: () {},
             ),
             ListTile(
               title: const Row(
@@ -193,17 +188,13 @@ class _HomeState extends State<Home> {
                   Text('Player Stats'),
                 ],
               ),
-              onTap: () {
-                // Update the state of the app.
-                // ...
-              },
+              onTap: () {},
             ),
           ],
         ),
       ),
       body: Column(
         children: [
-          // padding space for category buttons sizebox
           Padding(
             padding: const EdgeInsets.only(top: 10),
             child: SizedBox(
@@ -249,7 +240,6 @@ class _HomeState extends State<Home> {
               ),
             ),
           ),
-
           Expanded(
             child: CustomScrollView(
               slivers: [
@@ -261,7 +251,18 @@ class _HomeState extends State<Home> {
                     (context, index) {
                       final hero = agent[index];
                       return Heronamecard(
-                          avatar: hero.image, name: hero.name, role: hero.role);
+                        avatar: hero.image,
+                        name: hero.name,
+                        role: hero.role,
+                        onTap: () {
+                          Navigator.push(
+                              context,
+                              MaterialPageRoute(
+                                  builder: (context) => Herodetail(
+                                        dataPath: hero.dataPath,
+                                      )));
+                        },
+                      );
                     },
                     childCount: agent.length,
                   ),

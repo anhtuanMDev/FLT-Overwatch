@@ -1,0 +1,72 @@
+{
+    "name": "Junker Queen", "role": "Tank", "image": "assets/images/portraits/junkerqueen.png",
+    "total": "450", "normal": "450", "armor": "0", "shield": "0", "speed": "5.5m/s",
+    "abilities": [
+      {
+        "name": "Adrenaline Rush",
+        "key": "Passive",
+        "iconUrl": "assets/images/skills/tanks/junkerqueen/Passive.png",
+        "description": "All wound damage that Junker Queen does causes her to heal herself at an increased rate. Adrenaline Rush instantly heals for the remaining wound damage when an enemy dies with wounds on them.",
+        "stats": [
+          {"name": "Healing", "value": "200% of wound damage"}
+        ]
+      },
+      {
+        "name": "Scattergun",
+        "key": "Left Click",
+        "iconUrl": "assets/images/skills/tanks/junkerqueen/1.png",
+        "description": "Pump action shotgun. Can headshot.",
+        "stats": [
+          {"name": "Damage", "value": "80"},
+          {"name": "Fire Rate", "value": "1.33 rps\n(0.75s recovery)"},
+          {"name": "Ammo", "value": "8"},
+          {"name": "Reload", "value": "1.5s"}
+        ]
+      },
+      {
+        "name": "Jagged Blade",
+        "key": "Right Click",
+        "iconUrl": "assets/images/skills/tanks/junkerqueen/2.png",
+        "description": "Active: Throws a blade in an arc. Re-activate ability to recall. If it sticks to an enemy, the enemy will be pulled back when the blade returns. Damages enemies in both directions.\nPassive: Quick Melee wounds enemies, dealing damage over time ",
+        "stats": [
+          {"name": "Impact dmg.", "value": "65"},
+          {"name": "Wound dmg.", "value": "Thrown: 30 over 3s\nReturn & Melee: 15 over 3s"},
+          {"name": "Cooldown", "value": "6s"}
+        ]
+      },
+      {
+        "name": "Commanding Shout",
+        "key": "Shift",
+        "iconUrl": "assets/images/skills/tanks/junkerqueen/Shift.png",
+        "description": "Grants temporary health and movement speed to yourself and nearby allies.",
+        "stats": [
+          {"name": "Health", "value": "+150 (self)\n+50 (ally)"},
+          {"name": "Speed", "value": "+30%"},
+          {"name": "Duration", "value": "5s (self)\n3s (ally)"},
+          {"name": "Cooldown", "value": "14s"}
+        ]
+      },
+      {
+        "name": "Carnage",
+        "key": "E",
+        "iconUrl": "assets/images/skills/tanks/junkerqueen/E.png",
+        "description": "Swing your axe to wound all enemies in front of you, dealing damage over time.",
+        "stats": [
+          {"name": "Damage", "value": "Impact: 90\nWound: 40 over 3s"},
+          {"name": "Cast Time", "value": "1s"},
+          {"name": "Cooldown", "value": "8s\n-2s per hit"}
+        ]
+      },
+      {
+        "name": "Rampage",
+        "key": "Q",
+        "ultcharge": "2520",
+        "iconUrl": "assets/images/skills/tanks/junkerqueen/Q.png",
+        "description": "Charge forward. Wounds enemies, dealing damage over time and preventing them from being healed.",
+        "stats": [
+          {"name": "Impact dmg.", "value": "40"},
+          {"name": "Wound dmg.", "value": "60 over 4.5s"}
+        ]
+      }
+    ]
+  }

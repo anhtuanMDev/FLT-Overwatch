@@ -1,0 +1,73 @@
+{
+    "name": "Echo", "role": "Damage", "image": "assets/images/portraits/echo.png",
+    "total": "200", "normal": "200", "armor": "0", "shield": "0", "speed": "5.5m/s",
+    "abilities": [
+      {
+        "name": "Glide",
+        "key": "Passive (Space)",
+        "iconUrl": "assets/images/skills/dps/echo/Glide.png",
+        "description": "Echo can glide while falling.",
+        "stats": [
+          {"name": "Horizontal Speed", "value": "+50%"},
+          {"name": "Falling Speed", "value": "4 m/s"}
+        ]
+      },
+      {
+        "name": "Tri-Shot",
+        "key": "Left Click",
+        "iconUrl": "assets/images/skills/dps/echo/Tri_shot.png",
+        "description": "Echo fires 3 shots at once, in a triangle pattern. All pellets can headshot.",
+        "stats": [
+          {"name": "Damage", "value": "17"},
+          {"name": "Fire Rate (rps)", "value": "3 (3 pellets per shot)"},
+          {"name": "Ammo", "value": "12"},
+          {"name": "Reload", "value": "1.5s"}
+        ]
+      },
+      {
+        "name": "Sticky Bombs",
+        "key": "Right Click",
+        "iconUrl": "assets/images/skills/dps/echo/Sticky_bombs.png",
+        "description": "Echo fires a volley of sticky bombs that detonate after a delay.",
+        "stats": [
+          {"name": "Damage", "value": "Impact: 5\nExplosion: 25\nSelf: 12.5"},
+          {"name": "# of Bombs", "value": "6 bombs"},
+          {"name": "Explosion Fuse", "value": "1s"},
+          {"name": "Cooldown", "value": "6s"}
+        ]
+      },
+      {
+        "name": "Flight",
+        "key": "Shift",
+        "iconUrl": "assets/images/skills/dps/echo/Flight.png",
+        "description": "Echo surges forward quickly, then can fly freely.",
+        "stats": [
+          {"name": "Movespeed", "value": "8 m/s"},
+          {"name": "Duration", "value": "3s"}, 
+          {"name": "Cooldown", "value": "6s"}
+        ]
+      },
+      {
+        "name": "Focusing Beam",
+        "key": "E",
+        "iconUrl": "assets/images/skills/dps/echo/Focusing_beam.png",
+        "description": "Echo channels a beam for a few seconds, dealing very high damage to targets with less than half health. ",
+        "stats": [
+          {"name": "Damage", "value": "50 dps\n175 dps (<50% HP)"},
+          {"name": "Duration", "value": "2s"},
+          {"name": "Cooldown", "value": "8s"}
+        ]
+      },
+      {
+        "name": "Duplicate",
+        "key": "Q",
+        "iconUrl": "assets/images/skills/dps/echo/Duplicate.png",
+        "description": "Echo duplicates a targeted enemy hero and gains use of their abilities.\n - Echo's HP instantly becomes the full base HP of her target.\n - While duplicating, Echo charges her ultimate ability faster.\n - When the duration ends, or if Echo's HP is reduced to 1, Echo reverts back to normal and her HP returns to the HP she had prior to activating the ability.\n - Reverting back to Echo interrupts whatever ability she was using.",
+        "stats": [
+          {"name": "HP", "value": "Duplicate: 300 max.\nRevert: 100 min."},
+          {"name": "Ult Charge Speed", "value": "5x faster"},
+          {"name": "Duration", "value": "15s"}
+        ]
+      }
+    ]
+  }

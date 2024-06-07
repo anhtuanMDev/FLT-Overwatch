@@ -1,0 +1,62 @@
+{
+    "name": "Sojourn", "role": "Damage", "image": "assets/images/portraits/sojourn.png",
+    "total": "200", "normal": "200", "armor": "0", "shield": "0", "speed": "5.5m/s",
+    "abilities": [
+      {
+        "name": "Railgun",
+        "key": "Left Click",
+        "iconUrl": "assets/images/skills/dps/sojourn/1.png",
+        "description": "Rapid firing projectiles that generate energy on hit. ",
+        "stats": [
+          {"name": "Damage", "value": "9"},
+          {"name": "Fire Rate", "value": "14 rps"},
+          {"name": "Ammo", "value": "45"},
+          {"name": "Reload", "value": "1.2s"},
+          {"name": "Energy / Shot", "value": "5"}
+        ]
+      },
+      {
+        "name": "Railgun (Alt Fire)",
+        "key": "Right Click",
+        "iconUrl": "assets/images/skills/dps/sojourn/1.png",
+        "description": "High impact shot that consumes stored energy.",
+        "stats": [
+          {"name": "Damage", "value": "30-130\n1.5x headshot"},
+          {"name": "Type", "value": "Hitscan"},
+          {"name": "Energy Decay", "value": "after 5s\nminimum 25"}
+        ]
+      },
+      {
+        "name": "Power Slide",
+        "key": "Shift",
+        "iconUrl": "assets/images/skills/dps/sojourn/Shift.png",
+        "description": "Ground slide that can cancel into a high jump.",
+        "stats": [
+          {"name": "Cooldown", "value": "7s"},
+          {"name": "Duration", "value": "1s"},
+          {"name": "Speed", "value": "260%"}
+        ]
+      },
+      {
+        "name": "Disruptor Shot",
+        "key": "E",
+        "iconUrl": "assets/images/skills/dps/sojourn/E.png",
+        "description": "Launch an energy burst that deals damage to enemies within it.",
+        "stats": [
+          {"name": "Damage", "value": "52.5 per second"},
+          {"name": "Duration", "value": "4s"},
+          {"name": "Cooldown", "value": "15s"}
+        ]
+      },
+      {
+        "name": "Overclock",
+        "key": "Q",
+        "iconUrl": "assets/images/skills/dps/sojourn/Q.png",
+        "description": "Railgun energy auto-charges for a short duration and charged shots pierce enemies.",
+        "stats": [
+          {"name": "Full Charge Time", "value": "1 second"},
+          {"name": "Duration", "value": "9s"}
+        ]
+      }
+    ]
+  }

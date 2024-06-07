@@ -1,0 +1,63 @@
+{
+    "name": "Reaper", "role": "Damage", "image": "assets/images/portraits/reaper.png",
+    "total": "250", "normal": "250", "armor": "0", "shield": "0", "speed": "5.5m/s",
+    "abilities": [
+      {
+        "name": "The Reaping",
+        "key": "Passive",
+        "iconUrl": "assets/images/skills/dps/reaper/Passive.png",
+        "description": "Regains a portion of all damage done to heroes as health",
+        "stats": [
+          {"name": "Heal", "value": "35% of damage done"}
+        ]
+      },
+      {
+        "name": "Hellfire Shotguns",
+        "key": "Left Click",
+        "iconUrl": "assets/images/skills/dps/reaper/1.png",
+        "description": "Reaper tears enemies apart with twin shotguns.",
+        "stats": [
+          {"name": "Damage", "value": "1.6-5.4"},
+          {"name": "Fire Rate (rps)", "value": "2 (20 pellets per shot)"},
+          {"name": "Ammo", "value": "8"},
+          {"name": "Reload", "value": "1.5s"}
+        ]
+      },
+      {
+        "name": "Wraith Form",
+        "key": "Shift",
+        "iconUrl": "assets/images/skills/dps/reaper/Shift.png",
+        "description": "Reaper becomes a shadow for a short period of time. While in this form, he takes no damage and is able to pass through enemies, but cannot fire his weapons or use other abilities. Cannot be activated while affected by mobility-locking effects.",
+        "stats": [
+          {"name": "Health", "value": "Invulnerable"},
+          {"name": "Ammo", "value": "Refilled"},
+          {"name": "Cooldown", "value": "8s"},
+          {"name": "Duration", "value": "3s"},
+          {"name": "Speed", "value": "+50%"}
+        ]
+      },
+      {
+        "name": "Shadow Step",
+        "key": "E",
+        "iconUrl": "assets/images/skills/dps/reaper/E.png",
+        "description": "After marking a destination, Reaper disappears and reappears at that location. Reaper is invisible while exiting",
+        "stats": [
+          {"name": "Range", "value": "35m"},
+          {"name": "Cooldown", "value": "10s"},
+          {"name": "Duration", "value": "1.0s entering\n1.0s invulnerable"}
+        ]
+      },
+      {
+        "name": "Death Blossom",
+        "key": "Q",
+        "iconUrl": "assets/images/skills/dps/reaper/Q.png",
+        "description": "In a blur of motion, Reaper empties both hellfire shotguns at breakneck speed, dealing massive damage to all nearby enemies.",
+        "stats": [
+          {"name": "Damage", "value": "170 per second"},
+          {"name": "Ammo", "value": "Refilled"},
+          {"name": "Duration", "value": "3s"},
+          {"name": "Speed", "value": "-50%"}
+        ]
+      }
+    ]
+  }

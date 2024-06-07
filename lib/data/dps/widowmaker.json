@@ -1,0 +1,65 @@
+{
+    "name": "Widowmaker", "role": "Damage", "image": "assets/images/portraits/widowmaker.png",
+    "total": "175", "normal": "175", "armor": "0", "shield": "0", "speed": "5.5m/s",
+    "abilities": [
+      {
+        "name": "Widow's Kiss: Sniper",
+        "key": "Left Click (Scoped)",
+        "iconUrl": "assets/images/skills/dps/widowmaker/1.png",
+        "description": "Widowmaker’s versatile sniper rifle is ideal for scope-aimed shots at distant targets. 2.5x headshot multiplier (+0.5x compared to all other heros).",
+        "stats": [
+          {"name": "Damage", "value": "0%: 6-12\n100%: 60-120"},
+          {"name": "Recovery", "value": "0.5s"},
+          {"name": "Ammo", "value": "35\n(5 per shot)"},
+          {"name": "Reload", "value": "1.5s"},
+          {"name": "Charging", "value": "0.9s"}
+        ]
+      },
+      {
+        "name": "Widow's Kiss: Assault",
+        "key": "Left Click (Unscoped)",
+        "iconUrl": "assets/images/skills/dps/widowmaker/1.png",
+        "description": "Should targets close to medium range, the rifle can also be fired in fully-automatic mode. Can headshot.",
+        "stats": [
+          {"name": "Damage", "value": "3.9-13"},
+          {"name": "Fire Rate (rps)", "value": "10"},
+          {"name": "Ammo", "value": "35"},
+          {"name": "Reload", "value": "1.5s"},
+          {"name": "Scope in", "value": "0.33s"}
+        ]
+      },
+      {
+        "name": "Grappling Hook",
+        "key": "Shift",
+        "iconUrl": "assets/images/skills/dps/widowmaker/Shift.png",
+        "description": "Widowmaker launches a grappling hook towards the location she’s aiming at – when the hook connects with a scalable surface, she’s quickly drawn towards it.",
+        "stats": [
+          {"name": "Range", "value": "20m"},
+          {"name": "Pull Speed", "value": "20m/s"},
+          {"name": "Cooldown", "value": "12s"}
+        ]
+      },
+      {
+        "name": "Venom Mine",
+        "key": "E",
+        "iconUrl": "assets/images/skills/dps/widowmaker/E.png",
+        "description": "Widowmaker adheres a swiftly-arming venom mine to nearly any surface. When a target wanders within range of the mine’s motion trigger, it explodes, delivering poison gas to any enemies in the vicinity.",
+        "stats": [
+          {"name": "Damage", "value": "15 per second"},
+          {"name": "Poison Duration", "value": "5s"},
+          {"name": "Cooldown", "value": "15s"}
+        ]
+      },
+      {
+        "name": "Infra-Sight",
+        "key": "Q",
+        "iconUrl": "assets/images/skills/dps/widowmaker/Q.png",
+        "description": "Widowmaker’s recon visor allows her to see the heat signatures of her targets through walls and objects for a moderate amount of time. This enhanced vision is shared with her allies.",
+        "stats": [
+          {"name": "Area Radius", "value": "∞"},
+          {"name": "Cast Time", "value": "0.64s"},
+          {"name": "Duration", "value": "15s\nEnds on death"}
+        ]
+      }
+    ]
+  }

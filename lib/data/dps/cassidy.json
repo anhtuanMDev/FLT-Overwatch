@@ -1,0 +1,67 @@
+{
+    "name": "Cassidy", "role": "Damage", "image": "assets/images/portraits/cassidy.png",
+    "total": "225", "normal": "225", "armor": "0", "shield": "0", "speed": "5.5m/s",
+    "abilities": [
+      {
+        "name": "Peacekeeper",
+        "key": "Left Click",
+        "iconUrl": "assets/images/skills/dps/cassidy/1.png",
+        "description": "Cassidy fires off a round from his trusty six-shooter.",
+        "stats": [
+          {"name": "Damage", "value": "21-70"},
+          {"name": "Fire Rate (rps)", "value": "2"},
+          {"name": "Ammo", "value": "6"},
+          {"name": "Reload", "value": "1.5s"}
+        ]
+      },
+      {
+        "name": "Fan the Hammer",
+        "key": "Right Click",
+        "iconUrl": "assets/images/skills/dps/cassidy/1.png",
+        "description": "He can fan the Peacekeeper’s hammer to swiftly unload the entire cylinder.",
+        "stats": [
+          {"name": "Damage", "value": "15-50"},
+          {"name": "Fire Rate (rps)", "value": "7.8"},
+          {"name": "Ammo", "value": "6"},
+          {"name": "Reload", "value": "1.5s"}
+        ]
+      },
+      {
+        "name": "Combat Roll",
+        "key": "Shift",
+        "iconUrl": "assets/images/skills/dps/cassidy/Shift.png",
+        "description": "Cassidy dives in the direction he’s moving, effortlessly reloading his Peacekeeper in the process.",
+        "stats": [
+          {"name": "Dmg. reduction", "value": "75%"},
+          {"name": "Duration", "value": "0.4s"},
+          {"name": "Cooldown", "value": "6s"}
+          
+        ]
+      },
+      {
+        "name": "Magnetic Grenade",
+        "key": "E",
+        "iconUrl": "assets/images/skills/dps/cassidy/E.png",
+        "description": "Throw a homing grenade that sticks to enemies, slowing them and preventing them from using movement abilities.",
+        "stats": [
+          {"name": "Damage", "value": "80 (stickied)\n18-70 (only splash)"},
+          {"name": "Slow", "value": "-25%"},
+          {"name": "Duration", "value": "1.25s stick"},
+          {"name": "Cooldown", "value": "12s"}
+          
+        ]
+      },
+      {
+        "name": "Deadeye",
+        "key": "Q",
+        "iconUrl": "assets/images/skills/dps/cassidy/Q.png",
+        "description": "Cassidy takes a few precious moments to aim; when he’s ready to fire, he shoots every enemy in his line of sight. The weaker his targets are, the faster he’ll line up a killshot. Deadeye replenishes Peacekeeper's ammo afterwards.",
+        "stats": [
+          {"name": "Dmg. ramp-up", "value": "0 - 2s: 130/s\n2s+: 260/s"},
+          {"name": "Dmg. reduction", "value": "-40%"},
+          {"name": "Duration", "value": "7s max.\n0.5s to cancel"},
+          {"name": "Speed", "value": "-70%"}
+        ]
+      }
+    ]
+  }

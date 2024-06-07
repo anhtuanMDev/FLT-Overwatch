@@ -1,0 +1,66 @@
+{
+    "name": "Ashe", "role": "Damage", "image": "assets/images/portraits/ashe.png",
+    "total": "200", "normal": "200", "armor": "0", "shield": "0", "speed": "5.5m/s",
+    "abilities": [
+      {
+        "name": "The Viper",
+        "key": "Left Click",
+        "iconUrl": "assets/images/skills/dps/ashe/1.webp",
+        "description": "Ashe’s semi-automatic rifle fires quick shots. Can headshot.",
+        "stats": [
+          {"name": "Damage", "value": "12-40"},
+          {"name": "Fire Rate (rps)", "value": "4"},
+          {"name": "Ammo", "value": "12"},
+          {"name": "Reload", "value": "0.5s (cast time)\n+ 0.2s / bullet"}
+        ]
+      },
+      {
+        "name": "The Viper (Scoped)",
+        "key": "Left Click (Scoped)",
+        "iconUrl": "assets/images/skills/dps/ashe/1.webp",
+        "description": "She can also aim down sights for a more damaging, precise shot, but at slower fire rate and movement speed. Can headshot. ",
+        "stats": [
+          {"name": "Damage", "value": "22.5-75"},
+          {"name": "Fire Rate (rps)", "value": "1.54"},
+          {"name": "Speed", "value": "-25%"},
+          {"name": "Others", "value": "Same as unscoped"}
+        ]
+      },
+      {
+        "name": "Coach Gun",
+        "key": "Shift",
+        "iconUrl": "assets/images/skills/dps/ashe/S.webp",
+        "description": "Ashe blasts enemies in front of her, knocking them away and propelling herself backward for added mobility.",
+        "stats": [
+          {"name": "Damage", "value": "6 per pellet"},
+          {"name": "Num. of pellets", "value": "15"},
+          {"name": "Cooldown", "value": "10s"}
+        ]
+      },
+      {
+        "name": "Dynamite",
+        "key": "E",
+        "iconUrl": "assets/images/skills/dps/ashe/E.webp",
+        "description": "Ashe throws an explosive that detonates after a short delay or immediately when shot. The explosion from Dynamite also lights enemies on fire, dealing damage over time. Self damage is halved.",
+        "stats": [
+          {"name": "Explosion", "value": "20-50 damage"},
+          {"name": "Burn", "value": "20 dps\n5 seconds"},
+          {"name": "Self Dmg.", "value": "50%"},
+          {"name": "Delay", "value": "2s"},
+          {"name": "Cooldown", "value": "12s"}
+        ]
+      },
+      {
+        "name": "B.O.B.",
+        "key": "Q",
+        "iconUrl": "assets/images/skills/dps/ashe/Q.webp",
+        "description": "Ashe summons her trusted omnic sidekick, Bob, who charges forward and knocks enemies into the air, then lays down suppressing fire with his arm cannons. Prioritizes enemy targets that Ashe damages with her rifle.",
+        "stats": [
+          {"name": "Damage", "value": "120 (initial hit)\n14 per bullet (hand cannon)"},
+          {"name": "Fire Rate", "value": "8 rps"},
+          {"name": "Health", "value": "1000"},
+          {"name": "Duration", "value": "10s"}
+        ]
+      }
+    ]
+  }

@@ -1,0 +1,87 @@
+{
+    "name": "Brigitte", "role": "Support", "image": "assets/images/portraits/brigitte.png",
+    "total": "200", "normal": "150", "armor": "50", "shield": "0", "speed": "5.5m/s",
+    "abilities": [
+      {
+        "name": "Inspire",
+        "key": "Passive",
+        "iconUrl": "assets/images/skills/supports/brigitte/Passive.png",
+        "description": "Dealing damage to enemies heals nearby allies. If triggered, there is a cooldown before it can be triggered again.",
+        "stats": [
+          {"name": "Heal Rate", "value": "15 hp/s"},
+          {"name": "Area Radius", "value": "20m"},
+          {"name": "Duration", "value": "6s"},
+          {"name": "Cooldown", "value": "1s"}
+        ]
+      },
+      {
+        "name": "Rocket Flail",
+        "key": "Left Click",
+        "iconUrl": "assets/images/skills/supports/brigitte/1.png",
+        "description": "Brigitte's melee weapon has an extended range, enabling her to strike multiple enemies with a single swing. Cannot headshot.",
+        "stats": [
+          {"name": "Damage", "value": "35"},
+          {"name": "Fire Rate", "value": "1.67 rps"},
+          {"name": "Range", "value": "6m"}
+        ]
+      },
+      {
+        "name": "Barrier Shield",
+        "key": "Right Click",
+        "iconUrl": "assets/images/skills/supports/brigitte/2.png",
+        "description": "Brigitte deploys a frontal energy barrier to absorb a limited amount of damage.",
+        "stats": [
+          {"name": "Barrier", "value": "250 hp\n750 hp during Rally"},
+          {"name": "Barrier Regen.", "value": "85/s after\n2s not in use"},
+          {"name": "Speed", "value": "-30%"},
+          {"name": "Cooldown", "value": "5s if broken"}
+        ]
+      },
+      {
+        "name": "Shield Bash",
+        "key": "Left Click (with shield)",
+        "iconUrl": "assets/images/skills/supports/brigitte/3.png",
+        "description": "Once her Barrier Shield is deployed, Brigitte can dash forward to knock back an enemy.",
+        "stats": [
+          {"name": "Damage", "value": "50"},
+          {"name": "Stun", "value": "0.5s during Rally"},
+          {"name": "Range", "value": "12m"},
+          {"name": "Cooldown", "value": "5s"}
+        ]
+      },
+      {
+        "name": "Whip Shot",
+        "key": "Shift",
+        "iconUrl": "assets/images/skills/supports/brigitte/Shift.png",
+        "description": "Brigitte throws her flail a long distance, dealing damage and knocking an enemy away from her. Cannot headshot.",
+        "stats": [
+          {"name": "Damage", "value": "70"},
+          {"name": "Range", "value": "20m"},
+          {"name": "Cooldown", "value": "4s"}
+        ]
+      },
+      {
+        "name": "Repair Pack",
+        "key": "E",
+        "iconUrl": "assets/images/skills/supports/brigitte/E.png",
+        "description": "Brigitte throws a Repair Pack that heals an ally for a short duration.",
+        "stats": [
+          {"name": "Healing", "value": "+25hp instantly\n50 hp/s"},
+          {"name": "Duration", "value": "2s heal"},
+          {"name": "Cooldown", "value": "6s"},
+          {"name": "Charges", "value": "3"}
+        ]
+      },
+      {
+        "name": "Rally",
+        "key": "Q",
+        "iconUrl": "assets/images/skills/supports/brigitte/Q.png",
+        "description": "Brigitte moves faster and provides all nearby allies with overhealth. During Rally, Brigitte's basic abilities are enhanced.",
+        "stats": [
+          {"name": "Overhealth", "value": "+30 hp/s (up to 100)\n+100 armor (self)"},
+          {"name": "Speed", "value": "+15%"},
+          {"name": "Duration", "value": "10s speed/hp gen.\n30s overhealth"}
+        ]
+      }
+    ]
+  }

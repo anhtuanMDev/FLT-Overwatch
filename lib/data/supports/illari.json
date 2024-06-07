@@ -1,0 +1,64 @@
+{
+    "name": "Illari", "role": "Support", "image": "assets/images/portraits/illari.png",
+    "total": "200", "normal": "200", "armor": "0", "shield": "0", "speed": "5.5m/s",
+    "abilities": [
+      {
+        "name": "Solar Rifle",
+        "key": "Left Click",
+        "iconUrl": "assets/images/skills/supports/illari/1.webp",
+        "description": "Long-range auto charging rifle.",
+        "stats": [
+          {"name": "Damage", "value": "22.5-75 (max charge)\n7.5-25 (min charge)"},
+          {"name": "Fire Rate", "value": "1 (max charge)\n1.7 (min charge)"},
+          {"name": "Ammo", "value": "16"},
+          {"name": "Reload", "value": "2s"}
+        ]
+      },
+      {
+        "name": "Solar Rifle (Alt Fire)",
+        "key": "Right Click",
+        "iconUrl": "assets/images/skills/supports/illari/1.webp",
+        "description": "Medium range healing beam that consumes solar energy.",
+        "stats": [
+          {"name": "Heal Rate", "value": "105 hp/s"},
+          {"name": "Recharge", "value": "2.9s to full"},
+          {"name": "Cooldown", "value": "3.36s when depleted"}
+        ]
+      },
+      {
+        "name": "Outburst",
+        "key": "Shift",
+        "iconUrl": "assets/images/skills/supports/illari/Shift.webp",
+        "description": "Launches you in the direction you are moving. Knocking back enemies. Hold jump to go higher.",
+        "stats": [
+          {"name": "Damage", "value": "10"},
+          {"name": "Cast Time", "value": "0.2s"},
+          {"name": "Cooldown", "value": "7s"}
+        ]
+      },
+      {
+        "name": "Healing Pylon",
+        "key": "E",
+        "iconUrl": "assets/images/skills/supports/illari/E.webp",
+        "description": "Deploy a pylon that heals allies.",
+        "stats": [
+          {"name": "HP", "value": "50 health\n50 shields"},
+          {"name": "Heal", "value": "30 over 0.45s"},
+          {"name": "Fire Rate", "value": "1.25"},
+          {"name": "Cooldown", "value": "8s\n15s under attack"}
+        ]
+      },
+      {
+        "name": "Captive Sun",
+        "key": "Q",
+        "iconUrl": "assets/images/skills/supports/illari/Q.webp",
+        "description": "Fire an explosive ball of solar energy. Enemies hit are slowed and explode after taking significant damage.",
+        "stats": [
+          {"name": "Movespeed", "value": "-40% slow"},
+          {"name": "Secondary Ammo", "value": "Refilled"},
+          {"name": "Damage", "value": "5 (impact)\n50 (splash)\n120 (sunstruck)"},
+          {"name": "Duration", "value": "6s"}
+        ]
+      }
+    ]
+  }

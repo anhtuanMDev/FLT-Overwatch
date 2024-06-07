@@ -1,0 +1,101 @@
+{
+    "name": "D.va", "role": "Tank", "image": "assets/images/portraits/dva.png",
+    "total": "750 + 150 (Pilot)", "normal": "450", "armor": "300", "shield": "0", "speed": "5.5m/s",
+    "abilities": [
+      {
+        "name": "Eject",
+        "key": "Passive",
+        "iconUrl": "assets/images/skills/tanks/dva/icon.png",
+        "description": "D.Va ejects out of her mech when it is destroyed.",
+        "stats": [
+          {"name": "Invulnerability", "value": "0.4s"},
+          {"name": "Cast Time", "value": "1.5s"},
+          {"name": "Pilot Health", "value": "150 HP"}
+        ]
+      },
+      {
+        "name": "Fusion Cannons",
+        "key": "Left Click",
+        "iconUrl": "assets/images/skills/tanks/dva/1.png",
+        "description": "D.Va's mech is equipped with twin short-range rotating cannons. They lay down continuous, high-damage fire without needing to reload while still can headshot, but slow D.Va’s movement while they’re active.",
+        "stats": [
+          {"name": "Damage", "value": "0.6-2"},
+          {"name": "Fire Rate", "value": "6.667 rps\n(11/shot)"},
+          {"name": "Falloff range", "value": "10 - 20 meters"},
+          {"name": "Ammo", "value": "∞"},
+          {"name": "Speed", "value": "-30%"}
+        ]
+      },
+      {
+        "name": "Defense Matrix",
+        "key": "Right Click",
+        "iconUrl": "assets/images/skills/tanks/dva/2.png",
+        "description": "D.Va can activate this forward-facing targeting array to shoot incoming projectiles out of the air. Uses a resource meter that recharges automatically when not in use.",
+        "stats": [
+          {"name": "Duration", "value": "min: 0.5s\n max: 3s"},
+          {"name": "Recharge", "value": "16%/s\n 0.75s delay"},
+          {"name": "Cooldown", "value": "1s\n (full charge: 6 seconds)"},
+          {"name": "Range", "value": "10m"}
+        ]
+      },
+      {
+        "name": "Boosters",
+        "key": "Shift",
+        "iconUrl": "assets/images/skills/tanks/dva/Shift.png",
+        "description": "D.Va/'s mech launches into the air, her momentum carrying her forward. She can turn and change directions or barrel through her enemies, knocking them back.",
+        "stats": [
+          {"name": "Damage", "value": "15"},
+          {"name": "Speed", "value": "+118%"},
+          {"name": "Duration", "value": "2s"},
+          {"name": "Cooldown", "value": "3.5s"}
+        ]
+      },
+      {
+        "name": "Micro Missles",
+        "key": "E",
+        "iconUrl": "assets/images/skills/tanks/dva/E.png",
+        "description": "D.Va fires a barrage of small rockets that detonate on impact, dealing splash damage to both herself and her enemies in a limited radius around each explosion",
+        "stats": [
+          {"name": "Damage", "value": "2-7 (direct)\n1-4 (splash)"},
+          {"name": "Missles", "value": "18"},
+          {"name": "Duration", "value": "0.256s"},
+          {"name": "Cooldown", "value": "7s"}
+        ]
+      },
+      {
+        "name": "Self-Destruct",
+        "key": "Q",
+        "ultcharge": "1375",
+        "iconUrl": "assets/images/skills/tanks/dva/Q.png",
+        "description": "D.Va ejects from her mech and sets its reactor to explode, dealing massive damage to nearby opponents.",
+        "stats": [
+          {"name": "Area Radius", "value": "20m"},
+          {"name": "Damage", "value": "100 - 1000"},
+          {"name": "Duration", "value": "3s"}
+        ]
+      },
+      {
+        "name": "Light Gun (Pilot)",
+        "key": "Left Click",
+        "iconUrl": "assets/images/skills/tanks/dva/1p.png",
+        "description": "While outside of her mech, D.Va can continue the fight with a mid-range automatic blaster. Can headshot.",
+        "stats": [
+          {"name": "Damage", "value": "14"},
+          {"name": "Fire Rate", "value": "7 rps"},
+          {"name": "Ammo", "value": "20"},
+          {"name": "Reload", "value": "1.4s"}
+        ]
+      },
+      {
+        "name": "Call Mech (Pilot)",
+        "key": "Q",
+        "ultCharge": "300",
+        "iconUrl": "assets/images/skills/tanks/dva/Qp.png",
+        "description": "If her armored battle suit is destroyed, D.Va can call down a fresh mech and return to the fray.",
+        "stats": [
+          {"name": "Damage", "value": "250"},
+          {"name": "Cast Time", "value": "2s"}
+        ]
+      }
+    ]
+  }

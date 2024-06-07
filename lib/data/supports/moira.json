@@ -1,0 +1,66 @@
+{
+    "name": "Moira", "role": "Support", "image": "assets/images/portraits/moira.png",
+    "total": "200", "normal": "200", "armor": "0", "shield": "0", "speed": "5.5m/s",
+    "abilities": [
+      {
+        "name": "Biotic Grasp: Renegeration",
+        "key": "Left Click",
+        "iconUrl": "assets/images/skills/supports/moira/1.png",
+        "description": "Using her left hand, Moira expends biotic energy (resource meter) to heal allies in front of her. Causes a residual heal over time that begins upon the last application of the spray healing. This allows Moira to heal without expending resources. Biotic energy passively regenerates when not in use.",
+        "stats": [
+          {"name": "Spray Heal", "value": "70 hp/s"},
+          {"name": "Residue Heal", "value": "51hp over 3s"},
+          {"name": "Fire Rate", "value": "-12.5 energy/s"},
+          {"name": "Energy", "value": "100\n+2.4/s regen."}
+        ]
+      },
+      {
+        "name": "Biotic Grasp: Decay",
+        "key": "Right Click",
+        "iconUrl": "assets/images/skills/supports/moira/1.png",
+        "description": "Her right hand fires a long-range beam weapon that saps enemies’ health, healing Moira and replenishing her biotic energy. Cannot headshot.",
+        "stats": [
+          {"name": "Damage", "value": "50 per second"},
+          {"name": "Self Heal", "value": "24 hp/s"},
+          {"name": "Energy", "value": "+20/s"},
+          {"name": "Range", "value": "20m"}
+        ]
+      },
+      {
+        "name": "Fade",
+        "key": "Shift",
+        "iconUrl": "assets/images/skills/supports/moira/Shift.png",
+        "description": "Disappear, move faster, jump higher, and become invulnerable, but you cannot shoot. Cannot be activated while affected by mobility-locking effects.",
+        "stats": [
+          {"name": "Speed", "value": "+250%\n(19.25m/s)"},
+          {"name": "Duration", "value": "0.8s"},
+          {"name": "Cooldown", "value": "6s"}
+        ]
+      },
+      {
+        "name": "Biotic Orb",
+        "key": "E",
+        "iconUrl": "assets/images/skills/supports/moira/E.png",
+        "description": "Moira launches a rebounding biotic sphere; she can choose between a regeneration effect that heals the allies it passes through, or a decay effect that deals damage to enemies. Dealing damage with Biotic Orb restores a small amount of Biotic Energy. Cannot headshot.",
+        "stats": [
+          {"name": "Enemies", "value": "50 damage/s\n(up to 200)"},
+          {"name": "Allies", "value": "+65 hp/s\n(up to 300)"},
+          {"name": "Duration", "value": "up to 7s"},
+          {"name": "Cooldown", "value": "8s"}
+        ]
+      },
+      {
+        "name": "Coalescence",
+        "key": "Q",
+        "iconUrl": "assets/images/skills/supports/moira/Q.png",
+        "description": "Moira channels a long-range beam that both heals allies and bypasses barriers to damage her enemies. While channeling this ability, Moira's movement speed increases greatly, but she cannot perform any other actions. Moira's resource generation for Biotic Grasp is 3 times higher while channeling Coalescence. Cannot headshot.",
+        "stats": [
+          {"name": "DPS", "value": "70"},
+          {"name": "Heal (hp/s)", "value": "Ally: 140\nSelf: 50"},
+          {"name": "Cast Time", "value": "0.5s"},
+          {"name": "Mov. Speed", "value": "+40%"},
+          {"name": "Duration", "value": "8s"}
+        ]
+      }
+    ]
+  }

@@ -1,0 +1,79 @@
+{
+    "name": "Mauga", "role": "Tank", "image": "assets/images/portraits/mauga.png",
+    "total": "650", "normal": "450", "armor": "200", "shield": "0", "speed": "5.5m/s",
+    "abilities": [
+      {
+        "name": "Berserker",
+        "key": "Passive",
+        "iconUrl": "assets/images/skills/tanks/mauga/P.webp",
+        "description": "Gain temporary health when dealing critical damage.",
+        "stats": [
+          {"name": "Overhealth", "value": "50% of critical damage"},
+          {"name": "Maximum", "value": "150 hp"},
+          {"name": "Decay", "value": "-5/s after 2s"}
+        ]
+      },
+      {
+        "name": "Incendiary Chaingun",
+        "key": "Left Click",
+        "iconUrl": "assets/images/skills/tanks/mauga/1.webp",
+        "description": "Automatic weapon that ignites enemies on repeated impacts. Can headshot.",
+        "stats": [
+          {"name": "Damage", "value": "1.2 - 4 (direct)\n45 over 3s (burn)"},
+          {"name": "Fire Rate", "value": "18 rps"},
+          {"name": "Ammo", "value": "300"},
+          {"name": "Reload", "value": "2.2s"},
+          {"name": "Speed", "value": "-15%"}
+        ]
+      },
+      {
+        "name": "Volatile Chaingun",
+        "key": "Right Click",
+        "iconUrl": "assets/images/skills/tanks/mauga/2.webp",
+        "description": "Automatic weapon that deals critical damage to burning enemies. Can headshot.",
+        "stats": [
+          {"name": "Damage", "value": "1.2 - 4"},
+          {"name": "Fire Rate", "value": "18 rps"},
+          {"name": "Ammo", "value": "300"},
+          {"name": "Reload", "value": "2.2s"},
+          {"name": "Speed", "value": "-15%"}
+        ]
+      },
+      {
+        "name": "Overrun",
+        "key": "Shift",
+        "iconUrl": "assets/images/skills/tanks/mauga/S.webp",
+        "description": "Charge forward to stomp an launch enemies. You are unstoppable while charging.",
+        "stats": [
+          {"name": "Damage", "value": "25 (bump)\n45 (outside)\n90 (center)"},
+          {"name": "Dmg. Reduction", "value": "50%"},
+          {"name": "Duration", "value": "2s charge\n0.5s CC"},
+          {"name": "Speed", "value": "+250%"},
+          {"name": "Cooldown", "value": "6s"}
+        ]
+      },
+      {
+        "name": "Cardiac Overdrive",
+        "key": "E",
+        "iconUrl": "assets/images/skills/tanks/mauga/E.webp",
+        "description": "Mauga and nearby allies take reduced damage and heal by dealing damage.",
+        "stats": [
+          {"name": "Healing", "value": "60% of damage"},
+          {"name": "Dmg. Reduction", "value": "30%"},
+          {"name": "Duration", "value": "5s"},
+          {"name": "Cooldown", "value": "12s"}
+        ]
+      },
+      {
+        "name": "Cage Fight",
+        "key": "Q",
+        "iconUrl": "assets/images/skills/tanks/mauga/Q.webp",
+        "description": "Deploy a barrier that traps yourself and enemies. Automatically reloads Mauga's Chainguns at the start of the ultimate.",
+        "stats": [
+          {"name": "HP", "value": "1500"},
+          {"name": "Ammo", "value": "Refilled"},
+          {"name": "Duration", "value": "8s"}
+        ]
+      }
+    ]
+  }

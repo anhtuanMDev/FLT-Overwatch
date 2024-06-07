@@ -1,0 +1,62 @@
+{
+    "name": "Soldier 76", "role": "Damage", "image": "assets/images/portraits/soldier76.png",
+    "total": "200", "normal": "200", "armor": "0", "shield": "0", "speed": "5.5m/s",
+    "abilities": [
+      {
+        "name": "Heavy Pulse Rifle",
+        "key": "Left Click",
+        "iconUrl": "assets/images/skills/dps/soldier76/1.png",
+        "description": "Soldier: 76’s rifle remains particularly steady while unloading fully-automatic pulse fire. It takes 9 shots to reach maximum bullet spread. Can headshot.",
+        "stats": [
+          {"name": "Damage", "value": "5.7-19"},
+          {"name": "Fire Rate (rps)", "value": "9"},
+          {"name": "Ammo", "value": "30"},
+          {"name": "Reload", "value": "1.5s"}
+        ]
+      },
+      {
+        "name": "Helix Rockets",
+        "key": "Right Click",
+        "iconUrl": "assets/images/skills/dps/soldier76/2.png",
+        "description": "Tiny rockets spiral out of Soldier: 76’s Pulse Rifle in a single burst. The rockets’ explosion damages enemies in a small radius.",
+        "stats": [
+          {"name": "Damage", "value": "120 direct hit\n40-80 splash\n20-40 self"},
+          {"name": "Recovery", "value": "0.5s"},
+          {"name": "Cooldown", "value": "6s"}
+        ]
+      },
+      {
+        "name": "Sprint",
+        "key": "Shift",
+        "iconUrl": "assets/images/skills/dps/soldier76/Shift.png",
+        "description": "Whether he needs to evade a firefight or get back into one, Soldier: 76 can rush ahead in a burst of speed. His sprint ends if he takes an action other than charging forward.",
+        "stats": [
+          {"name": "Speed", "value": "150% (8.33m/s)"},
+          {"name": "Firing Delay", "value": "0.3s"}
+        ]
+      },
+      {
+        "name": "Biotic Field",
+        "key": "E",
+        "iconUrl": "assets/images/skills/dps/soldier76/E.png",
+        "description": "Soldier: 76 plants a biotic emitter on the ground. Its energy projection restores health to 76 and any of his squadmates within the field.",
+        "stats": [
+          {"name": "Heal Rate", "value": "40 hp/s"},
+          {"name": "Cast Time", "value": "0.54s"},
+          {"name": "Duration", "value": "5s"},
+          {"name": "Cooldown", "value": "18s"}
+        ]
+      },
+      {
+        "name": "Tactical Visor",
+        "key": "Q",
+        "iconUrl": "assets/images/skills/dps/soldier76/Q.png",
+        "description": "Allows Soldier: 76's aim to home in on targets in a circle around his crosshairs and will switch targets if line of sight to the original target is interrupted. Using the ability also removes damage falloff and increases the reload speed of 76's Pulse Rifle while active.",
+        "stats": [
+          {"name": "Cast Time", "value": "1.2s"},
+          {"name": "Duration", "value": "6s"},
+          {"name": "Reload", "value": "0.65s"}
+        ]
+      }
+    ]
+  }

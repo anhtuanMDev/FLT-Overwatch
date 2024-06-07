@@ -1,0 +1,66 @@
+{
+    "name": "Winston", "role": "Tank", "image": "assets/images/portraits/winston.png",
+    "total": "550", "normal": "350", "armor": "200", "shield": "0", "speed": "5.5m/s",
+    "abilities": [
+      {
+        "name": "Tesla Cannon",
+        "key": "Left Click",
+        "iconUrl": "assets/images/skills/tanks/winston/1.png",
+        "description": "Winston`s weapon fires a short-range electric barrage for as long as he holds down the trigger. Ignores armor damage reduction. Cannot headshot.",
+        "stats": [
+          {"name": "Damage", "value": "3"},
+          {"name": "Fire Rate", "value": "20 rps"},
+          {"name": "Ammo", "value": "100"},
+          {"name": "Reload", "value": "1.7s"}
+        ]
+      },
+      {
+        "name": "Tesla Cannon (Alt Fire)",
+        "key": "Right Click (Hold)",
+        "iconUrl": "assets/images/skills/tanks/winston/1.png",
+        "description": "Winston's weapon charges up then fires a medium-range electric beam. Ignores armor damage reduction. Cannot headshot.",
+        "stats": [
+          {"name": "Damage", "value": "15 - 50"},
+          {"name": "Charge Time", "value": "1s to full"},
+          {"name": "Recovery", "value": "0.75s"},
+          {"name": "Ammo Usage", "value": "12"}
+        ]
+      },
+      {
+        "name": "Jump Pack",
+        "key": "Shift",
+        "iconUrl": "assets/images/skills/tanks/winston/Shift.webp",
+        "description": "Assisted by his energy pack, Winston lunges through the air, dealing damage and staggering nearby enemies when he lands.",
+        "stats": [
+          {"name": "Damage", "value": "1-50"},
+          {"name": "Area Radius", "value": "5m"},
+          {"name": "Cooldown", "value": "5s\n2s (Primal Rage)"}
+        ]
+      },
+      {
+        "name": "Barrier Projector",
+        "key": "E",
+        "iconUrl": "assets/images/skills/tanks/winston/E.png",
+        "description": "Winston's barrier projector extends a bubble-shaped field that absorbs damage until it's destroyed. Allies protected by the barrier can return fire from within it.",
+        "stats": [
+          {"name": "Barrier", "value": "650 hp"},
+          {"name": "Cast Time", "value": "0.12s"},
+          {"name": "Duration", "value": "8s"},
+          {"name": "Cooldown", "value": "12s"}
+        ]
+      },
+      {
+        "name": "Primal Rage",
+        "key": "Q",
+        "iconUrl": "assets/images/skills/tanks/winston/Q.png",
+        "description": "Winston embraces his animal nature, significantly boosting his health and making him very difficult to kill, strengthening his melee attack, and allowing him to use his Jump Pack ability more frequently. While raging, Winston can only make melee and Jump Pack attacks.",
+        "stats": [
+          {"name": "Health", "value": "850 health\n150 armor"},
+          {"name": "Damage", "value": "40"},
+          {"name": "Fire Rate", "value": "1.5 swing/s"},
+          {"name": "Duration", "value": "10s"},
+          {"name": "Speed", "value": "130%"}
+        ]
+      }
+    ]
+  }

@@ -1,0 +1,76 @@
+{
+    "name": "Zarya", "role": "Tank", "image": "assets/images/portraits/zarya.png",
+    "total": "475", "normal": "250", "armor": "0", "shield": "225", "speed": "5.5m/s",
+    "abilities": [
+      {
+        "name": "Energy",
+        "key": "Passive",
+        "iconUrl": "assets/images/skills/tanks/zarya/Passive.png",
+        "description": "Damage blocked increases Particle Cannon damage.",
+        "stats": [
+          {"name": "Maximum", "value": "100 charges"},
+          {"name": "Decay", "value": "-2 charge/s after 2s"},
+          {"name": "Gain", "value": "+1 charge per\n5 dmg. absorbed"}
+        ]
+      },
+      {
+        "name": "Particle Cannon",
+        "key": "Left Click",
+        "iconUrl": "assets/images/skills/tanks/zarya/1.png",
+        "description": "Zarya’s mighty Particle Cannon unleashes a short-range beam of destructive energy. Cannot headshot.",
+        "stats": [
+          {"name": "Damage", "value": "85 dps\n+1%/energy"},
+          {"name": "Max Damage", "value": "170 dps"},
+          {"name": "Ammo", "value": "100 (20 rps)"},
+          {"name": "Reload", "value": "1.5s"}
+        ]
+      },
+      {
+        "name": "Particle Cannon (Alt Fire)",
+        "key": "Right Click",
+        "iconUrl": "assets/images/skills/tanks/zarya/1.png",
+        "description": "Alternatively, Zarya can lob an explosive charge to strike multiple opponents. Cannot headshot.",
+        "stats": [
+          {"name": "Damage", "value": "47\n+1%/energy"},
+          {"name": "Fire Rate", "value": "1 rps"},
+          {"name": "Ammo", "value": "100 (25 per shot)"},
+          {"name": "Reload", "value": "1.5s"}
+        ]
+      },
+      {
+        "name": "Particle Barrier",
+        "key": "Shift",
+        "iconUrl": "assets/images/skills/tanks/zarya/Shift.png",
+        "description": "The Particle Cannon can emit a personal barrier that shields Zarya against incoming damage and debuffs, redirecting their energy to enhance her weapon’s damage and the width of its beam. The barrier, although only has 200 hit points, will absorb all of one burst damage even if it's higher than 200. For example, Tracer's ult will be completely absorbed even if it does 400 damage.",
+        "stats": [
+          {"name": "Barrier", "value": "200 hp"},
+          {"name": "Duration", "value": "2s"},
+          {"name": "Cooldown", "value": "10s"},
+          {"name": "Charges", "value": "2 (shared)"}
+        ]
+      },
+      {
+        "name": "Projected Barrier",
+        "key": "E",
+        "iconUrl": "assets/images/skills/tanks/zarya/E.png",
+        "description": "Zarya surrounds one of her teammates with an energy barrier that simultaneously absorbs fire and boosts the power of her Particle Cannon. Functions identical to Particle Barrier.",
+        "stats": [
+          {"name": "Barrier", "value": "200 hp"},
+          {"name": "Duration", "value": "2s"},
+          {"name": "Cooldown", "value": "8s"},
+          {"name": "Charges", "value": "2 (shared)"}
+        ]
+      },
+      {
+        "name": "Graviton Surge",
+        "key": "Q",
+        "iconUrl": "assets/images/skills/tanks/zarya/Q.png",
+        "description": "Zarya launches a gravity bomb that draws in enemy combatants and deals damage while they’re trapped. Disables movement abilities such as Tracer's Blink.",
+        "stats": [
+          {"name": "Damage", "value": "22 total"},
+          {"name": "Area Radius", "value": "6m"},
+          {"name": "Duration", "value": "4s"}
+        ]
+      }
+    ]
+  }

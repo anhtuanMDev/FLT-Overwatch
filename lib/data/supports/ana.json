@@ -1,0 +1,67 @@
+{
+    "name": "Ana", "role": "Support", "image": "assets/images/portraits/ana.png",
+    "total": "200", "normal": "200", "armor": "0", "shield": "0", "speed": "5.5m/s",
+    "abilities": [
+      {
+        "name": "Biotic Rifle",
+        "key": "Left Click",
+        "iconUrl": "assets/images/skills/supports/ana/1.webp",
+        "description": "The Biotic Rifle shoots darts that will heal allied heroes or apply 0.9 second damage-over-time (DOT) to enemy units. The dart is a fast moving projectile if fired from the hip, and a hitscan shot if firing while scoped. Cannot headshot.",
+        "stats": [
+          {"name": "Damage", "value": "70"},
+          {"name": "Heal", "value": "70"},
+          {"name": "Duration", "value": "0.58s"},
+          {"name": "Fire Rate", "value": "1.25 rps"},
+          {"name": "Ammo", "value": "12"},
+          {"name": "Reload", "value": "1.5s"}
+        ]
+      },
+      {
+        "name": "Biotic Rifle (Scope)",
+        "key": "Right Click to Scope",
+        "iconUrl": "assets/images/skills/supports/ana/1.webp",
+        "description": "She can use the rifle’s scope to zoom in on targets and make highly accurate shots. The dart is a fast moving projectile if fired from the hip, and a hitscan shot if firing while scoped. Cannot headshot.",
+        "stats": [
+          {"name": "Stats", "value": "same as above"},
+          {"name": "Scope in", "value": "0.25 seconds"},
+          {"name": "Scope out", "value": "0.15 seconds"}
+        ]
+      },
+      {
+        "name": "Sleep Dart",
+        "key": "Shift",
+        "iconUrl": "assets/images/skills/supports/ana/S.webp",
+        "description": "After a short delay, Ana fires a fast moving dart from her sidearm. An enemy hit is stunned for a few seconds, but the effect is immediately broken if the target takes damage.",
+        "stats": [
+          {"name": "Damage", "value": "5"},
+          {"name": "Delay", "value": "0.3s"},
+          {"name": "Sleep Duration", "value": "5s\n3.5 on supports"},
+          {"name": "Cooldown", "value": "14s"}
+        ]
+      },
+      {
+        "name": "Biotic Grenade",
+        "key": "E",
+        "iconUrl": "assets/images/skills/supports/ana/E.webp",
+        "description": "Ana tosses a biotic bomb that deals damage to enemies and heals allies in a small area of effect. Affected allies briefly receive increased healing from all sources, while enemies caught in the blast cannot be healed for a few moments.",
+        "stats": [
+          {"name": "Enemies", "value": "60 damage\nblock healing"},
+          {"name": "Allies", "value": "+60 hp\n+50% healing"},
+          {"name": "Duration", "value": "3s"},
+          {"name": "Cooldown", "value": "12s"}
+        ]
+      },
+      {
+        "name": "Nano Boost",
+        "key": "Q",
+        "iconUrl": "assets/images/skills/supports/ana/Q.webp",
+        "description": "After Ana hits one of her allies with a combat boost, they deal more damage and take less damage from enemies’ attacks.",
+        "stats": [
+          {"name": "Heal", "value": "250 hp"},
+          {"name": "Dmg. boost", "value": "+50%"},
+          {"name": "Dmg. reduction", "value": "-50%"},
+          {"name": "Duration", "value": "8s"}
+        ]
+      }
+    ]
+  }

@@ -62,6 +62,95 @@ flutter:
     - assets/images/skills/
     - assets/icons/
 
+    - assets/images/skills/tanks/dva/
+    - assets/images/skills/tanks/doomfist/
+    - assets/images/skills/tanks/junkerqueen/
+    - assets/images/skills/tanks/mauga/
+    - assets/images/skills/tanks/orisa/
+    - assets/images/skills/tanks/ramattra/
+    - assets/images/skills/tanks/reinhardt/
+    - assets/images/skills/tanks/roadhog/
+    - assets/images/skills/tanks/sigma/
+    - assets/images/skills/tanks/winston/
+    - assets/images/skills/tanks/wreckingball/
+    - assets/images/skills/tanks/zarya/
+
+    - assets/images/skills/dps/ashe/
+    - assets/images/skills/dps/bastion/
+    - assets/images/skills/dps/cassidy/
+    - assets/images/skills/dps/echo/
+    - assets/images/skills/dps/genji/
+    - assets/images/skills/dps/hanzo/
+    - assets/images/skills/dps/junkrat/
+    - assets/images/skills/dps/mei/
+    - assets/images/skills/dps/pharah/
+    - assets/images/skills/dps/reaper/
+    - assets/images/skills/dps/sojourn/
+    - assets/images/skills/dps/soldier76/
+    - assets/images/skills/dps/sombra/
+    - assets/images/skills/dps/symmetra/
+    - assets/images/skills/dps/torbjörn/
+    - assets/images/skills/dps/tracer/
+    - assets/images/skills/dps/venture/
+    - assets/images/skills/dps/widowmaker/
+
+    - assets/images/skills/supports/ana/
+    - assets/images/skills/supports/baptiste/
+    - assets/images/skills/supports/brigitte/
+    - assets/images/skills/supports/illari/
+    - assets/images/skills/supports/kiriko/
+    - assets/images/skills/supports/lifeweaver/
+    - assets/images/skills/supports/lúcio/
+    - assets/images/skills/supports/mercy/
+    - assets/images/skills/supports/moira/
+    - assets/images/skills/supports/zenyatta/
+
+    # dps assets data  
+    - lib/data/dps/ashe.json
+    - lib/data/dps/bastion.json
+    - lib/data/dps/cassidy.json
+    - lib/data/dps/echo.json
+    - lib/data/dps/genji.json
+    - lib/data/dps/hanzo.json
+    - lib/data/dps/junkrat.json
+    - lib/data/dps/mei.json
+    - lib/data/dps/pharah.json
+    - lib/data/dps/reaper.json
+    - lib/data/dps/sojourn.json
+    - lib/data/dps/soldier76.json
+    - lib/data/dps/sombra.json
+    - lib/data/dps/symmetra.json
+    - lib/data/dps/torbjörn.json
+    - lib/data/dps/tracer.json
+    - lib/data/dps/venture.json
+    - lib/data/dps/widowmaker.json
+
+    # supports assets data  
+    - lib/data/supports/ana.json
+    - lib/data/supports/baptiste.json
+    - lib/data/supports/brigitte.json
+    - lib/data/supports/illari.json
+    - lib/data/supports/kiriko.json
+    - lib/data/supports/lifeweaver.json
+    - lib/data/supports/lúcio.json
+    - lib/data/supports/mercy.json
+    - lib/data/supports/moira.json
+    - lib/data/supports/zenyatta.json
+
+    # tanks assets data  
+    - lib/data/tanks/dva.json
+    - lib/data/tanks/doomfist.json
+    - lib/data/tanks/junkerqueen.json
+    - lib/data/tanks/mauga.json
+    - lib/data/tanks/orisa.json
+    - lib/data/tanks/ramattra.json
+    - lib/data/tanks/reinhardt.json
+    - lib/data/tanks/roadhog.json
+    - lib/data/tanks/sigma.json
+    - lib/data/tanks/winston.json
+    - lib/data/tanks/wreckingball.json
+    - lib/data/tanks/zarya.json
+
   # An image asset can refer to one or more resolution-specific "variants", see
   # https://flutter.dev/assets-and-images/#resolution-aware
 

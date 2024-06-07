@@ -1,0 +1,52 @@
+{
+    "name": "Tracer", "role": "Damage", "image": "assets/images/portraits/tracer.png",
+    "total": "150", "normal": "150", "armor": "0", "shield": "0", "speed": "6m/s",
+    "abilities": [
+      {
+        "name": "Pulse Pistols",
+        "key": "Left Click",
+        "iconUrl": "assets/images/skills/dps/tracer/1.png",
+        "description": "Tracer rapid-fires both of her pistols.",
+        "stats": [
+          {"name": "Damage", "value": "1.8-6"},
+          {"name": "Fire Rate (rps)", "value": "40"},
+          {"name": "Ammo", "value": "40"},
+          {"name": "Reload", "value": "1s"}
+        ]
+      },
+      {
+        "name": "Blink",
+        "key": "Shift",
+        "iconUrl": "assets/images/skills/dps/tracer/Shift.png",
+        "description": "Tracer zips horizontally through space in the direction she’s moving, and reappears several yards away. She stores up to three charges of the blink ability and generates more every few seconds.",
+        "stats": [
+          {"name": "Range", "value": "7.5m"},
+          {"name": "Charges", "value": "3"},
+          {"name": "Cooldown", "value": "3s/charge"}
+        ]
+      },
+      {
+        "name": "Recall",
+        "key": "E",
+        "iconUrl": "assets/images/skills/dps/tracer/E.png",
+        "description": "Tracer bounds backward in time, returning her health and position on the map to precisely where they were a few seconds before.",
+        "stats": [
+          {"name": "Heal", "value": "highest HP in past 3s"},
+          {"name": "Ammo", "value": "Refilled"},
+          {"name": "Duration", "value": "1.25s"},
+          {"name": "Cooldown", "value": "12s"}
+        ]
+      },
+      {
+        "name": "Pulse Bomb",
+        "key": "Q",
+        "iconUrl": "assets/images/skills/dps/tracer/Q.png",
+        "description": "Tracer lobs a large bomb that adheres to any surface or unfortunate opponent it lands on. After a brief delay, the bomb explodes, dealing high damage to all enemies within its blast radius.",
+        "stats": [
+          {"name": "Damage", "value": "350 (explosion)\n5 (impact)"},
+          {"name": "Delay", "value": "1s"}, 
+          {"name": "Area Radius", "value": "3m"}
+        ]
+      }
+    ]
+  }

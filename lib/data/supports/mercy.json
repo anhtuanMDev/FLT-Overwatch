@@ -1,0 +1,81 @@
+{
+    "name": "Mercy", "role": "Support", "image": "assets/images/portraits/mercy.png",
+    "total": "200", "normal": "200", "armor": "0", "shield": "0", "speed": "5.5m/s",
+    "abilities": [
+      {
+        "name": "Sympathetic Recovery",
+        "key": "Passive",
+        "iconUrl": "assets/images/skills/supports/mercy/icon.png",
+        "description": "Healing allies with Caduceus Staff heals you. ",
+        "stats": [
+          {"name": "Healing", "value": "25% of Caduceus Staff"}
+        ]
+      },
+      {
+        "name": "Angelic Descent",
+        "key": "Passive (Space)",
+        "iconUrl": "assets/images/skills/supports/mercy/Passive.png",
+        "description": "Propelled by her Valkyrie suit, Mercy slows the speed of her descent from great heights.",
+        "stats": [
+        ]
+      },
+      {
+        "name": "Caduceus Staff",
+        "key": "Left Click / Right Click",
+        "iconUrl": "assets/images/skills/supports/mercy/1.png",
+        "description": "Mercy engages one of two beams that connect to an ally. By maintaining the beams, she can either restore that ally's health or increase the amount of damage they deal. Beams ignore barriers and will linger for a short duration if the target breaks line-of-sight or moves out of range.",
+        "stats": [
+          {"name": "Damage Boost", "value": "+25%"},
+          {"name": "Heal Rate", "value": "55 hp/s"},
+          {"name": "Range", "value": "15m"},
+          {"name": "Linger Duration", "value": "1.3s"}
+        ]
+      },
+      {
+        "name": "Caduceus Blaster",
+        "key": "Secondary Weapon",
+        "iconUrl": "assets/images/skills/supports/mercy/2.png",
+        "description": "Mercy shoots a fast moving projectile from her sidearm. It's best reserved for emergency personal defense.\nCan headshot.",
+        "stats": [
+          {"name": "Damage", "value": "20"},
+          {"name": "Fire Rate", "value": "5 rps"},
+          {"name": "Ammo", "value": "25"},
+          {"name": "Reload", "value": "1.4s"}
+        ]
+      },
+      {
+        "name": "Guardian Angel",
+        "key": "Shift",
+        "iconUrl": "assets/images/skills/supports/mercy/Shift.png",
+        "description": "Fly towards an ally. While in flight, Jump launches you forward, and Crouch launches you upward.",
+        "stats": [
+          {"name": "Speed", "value": "17m/s"},
+          {"name": "Range", "value": "30m"},
+          {"name": "Cooldown", "value": "1.5s"}
+        ]
+      },
+      {
+        "name": "Resurrect",
+        "key": "E",
+        "iconUrl": "assets/images/skills/supports/mercy/E.png",
+        "description": "Mercy radiates restorative power, bringing nearby dead allies back into the fight with full health. Mercy is slowed significantly while performing resurrection.",
+        "stats": [
+          {"name": "Speed", "value": "25% while casting"},
+          {"name": "Cast Time", "value": "1.75s"},
+          {"name": "Cooldown", "value": "30s"}
+        ]
+      },
+      {
+        "name": "Valkyrie",
+        "key": "Q",
+        "iconUrl": "assets/images/skills/supports/mercy/Q.png",
+        "description": "Valkyrie unleashes the full power of Mercy’s Valkyrie suit, enhancing her weapons and abilities for a limited duration.\n - Regeneration (Support Passive): Always active, uninterruptable\n - Hover: Mercy can now fly freely, at increased speed\n - Caduceus Staff: Increased output/range/chains nearby allies\n - Caduceus Blaster: ∞ ammo, increased projectile speed\n - Guardian Angel: Increased range and speed",
+        "stats": [
+          {"name": "Range", "value": "+100% (ability)\n10m (chain)"},
+          {"name": "Healing", "value": "60 hp/s (beam)\nuninterrupted regen."},
+          {"name": "Cast Time", "value": "0.5s"},
+          {"name": "Duration", "value": "15s"}
+        ]
+      }
+    ]
+  }

@@ -1,0 +1,76 @@
+{
+    "name": "Sombra", "role": "Damage", "image": "assets/images/portraits/sombra.png",
+    "total": "200", "normal": "200", "armor": "0", "shield": "0", "speed": "5.5m/s",
+    "abilities": [
+      {
+        "name": "Stealth",
+        "key": "Passive",
+        "iconUrl": "assets/images/skills/dps/sombra/Passive.webp",
+        "description": "When out of combat, Sombra becomes invisible and move faster. Attacking, using offensive abilities, or taking damage disables her camouflage. Sombra will also be detected by nearby enemies and abilities such as Sonic Arrow and Infra-Sight. Sombra cannot capture objectives while invisible. ",
+        "stats": [
+          {"name": "Cast Time", "value": "0.25s fade out\n0.375s fade in"},
+          {"name": "Speed", "value": "+45%"},
+          {"name": "Cooldown", "value": "3.5s out of combat"}
+        ]
+      },
+      {
+        "name": "Machine Pistol",
+        "key": "Left Click",
+        "iconUrl": "assets/images/skills/dps/sombra/1.png",
+        "description": "Sombra’s fully-automatic machine pistol fires in a short-range spread.",
+        "stats": [
+          {"name": "Damage", "value": "2.4-8"},
+          {"name": "Fire Rate (rps)", "value": "20"},
+          {"name": "Ammo", "value": "60"},
+          {"name": "Reload", "value": "1.2s"}
+        ]
+      },
+      {
+        "name": "Hack",
+        "key": "Right Click",
+        "iconUrl": "assets/images/skills/dps/sombra/2.png",
+        "description": "Hacking an enemy will interrupt any channeled effects (including ultimates) and prevent the activation of abilities, including a Hero's Passive. Hacked enemies also have their health bar and ultimate status revealed for a longer duration.\nHacked health packs respawn much faster (small health packs in 2.5 seconds, large health packs in 3.75 seconds), and can't be picked up by enemies.",
+        "stats": [
+          {"name": "Cast Time", "value": "0.65s\n(interruptible)"},
+          {"name": "Silence", "value": "1.5s"},
+          {"name": "Hack Duration", "value": "Hero: 8s\nHealth Packs: 45s\nTurrets: 10s"},
+          {"name": "Cooldown", "value": "6s\n3s (interrupted)"}
+        ]
+      },
+      {
+        "name": "Virus",
+        "key": "Shift",
+        "iconUrl": "assets/images/skills/dps/sombra/Shift.webp",
+        "description": "Infect enemies with a projectile that deals damage over time. Virus damages hacked targets at a faster rate. ",
+        "stats": [
+          {"name": "Impact dmg.", "value": "10\n20 (hacked)"},
+          {"name": "DoT", "value": "100 over 4s\n100 over 2s (hacked)"},
+          {"name": "Cooldown", "value": "6s"}
+        ]
+      },
+      {
+        "name": "Translocator",
+        "key": "E",
+        "iconUrl": "assets/images/skills/dps/sombra/E.png",
+        "description": "Sombra tosses out a translocator beacon and teleport to it. Stealth cooldown is reduced after teleporting.",
+        "stats": [
+          {"name": "Teleport Delay", "value": "0.25s"},
+          {"name": "Invulnerability", "value": "0.4s"},
+          {"name": "Cooldown", "value": "5s"}
+        ]
+      },
+      {
+        "name": "EMP",
+        "key": "Q",
+        "ultCharge": "1250",
+        "iconUrl": "assets/images/skills/dps/sombra/Q.png",
+        "description": "Sombra discharges electromagnetic energy in a wide radius, destroying enemy barriers and shields and hacking all opponents caught in the blast.",
+        "stats": [
+          {"name": "Damage", "value": "25% current health\n100% of barriers"},
+          {"name": "Silence", "value": "3s"},
+          {"name": "Cast Time", "value": "0.35s"},
+          {"name": "Duration", "value": "Same as Hack"}
+        ]
+      }
+    ]
+  }

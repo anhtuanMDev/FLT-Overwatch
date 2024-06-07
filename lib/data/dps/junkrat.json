@@ -1,0 +1,68 @@
+{
+    "name": "Junkrat", "role": "Damage", "image": "assets/images/portraits/junkrat.png",
+    "total": "200", "normal": "200", "armor": "0", "shield": "0", "speed": "5.5m/s",
+    "abilities": [
+      {
+        "name": "Total Mayhem",
+        "key": "Passive",
+        "iconUrl": "assets/images/skills/dps/junkrat/Passive.png",
+        "description": "Junkrat's deranged sense of humor persists past his death. If killed, he drops several live grenades.",
+        "stats": [
+          {"name": "Damage", "value": "50 per grenade\n300 total"},
+          {"name": "Num. of grenades", "value": "6"},
+          {"name": "Delay", "value": "0.7s"}
+        ]
+      },
+      {
+        "name": "Frag Launcher",
+        "key": "Left Click",
+        "iconUrl": "assets/images/skills/dps/junkrat/1.png",
+        "description": "Junkrat's Frag Launcher lobs grenades a significant distance. They bounce to reach their destination, and blow up when they strike an enemy. Cannot headshot.",
+        "stats": [
+          {"name": "Damage", "value": "120 (direct hit)\n10-80 (splash)"},
+          {"name": "Fire Rate", "value": "1.56 rps"},
+          {"name": "Ammo", "value": "5"},
+          {"name": "Reload", "value": "1.5s"},
+          {"name": "Bounces", "value": "2"}
+        ]
+      },
+      {
+        "name": "Concussion Mine",
+        "key": "Shift",
+        "iconUrl": "assets/images/skills/dps/junkrat/Shift.png",
+        "description": "After placing one of his homemade Concussion Mines, Junkrat can trigger it to damage enemies and send them flying... or propel himself through the air.",
+        "stats": [
+          {"name": "Damage", "value": "30-110"},
+          {"name": "HP", "value": "25"},
+          {"name": "Ammo", "value": "2 charges"},
+          {"name": "Cooldown", "value": "8s per charge"}
+        ]
+      },
+      {
+        "name": "Steel Trap",
+        "key": "E",
+        "iconUrl": "assets/images/skills/dps/junkrat/E.png",
+        "description": "Junkrat tosses out a giant, metal-toothed trap. Should an enemy wander too close to the trap, it clamps on, injuring and immobilizing them.",
+        "stats": [
+          {"name": "HP", "value": "100"},
+          {"name": "Damage", "value": "100"},
+          {"name": "Arming", "value": "0.75s"},
+          {"name": "Trapped", "value": "2.5s"},
+          {"name": "Cooldown", "value": "10s"}
+        ]
+      },
+      {
+        "name": "RIP-Tire",
+        "key": "Q",
+        "iconUrl": "assets/images/skills/dps/junkrat/Q.png",
+        "description": "Junkrat revs up a motorized tire bomb and sends it rolling across the battlefield, climbing over walls and obstacles. He can remotely detonate the RIP-Tire to deal serious damage to enemies caught in the blast, or just wait for it to explode on its own.",
+        "stats": [
+          {"name": "HP", "value": "100"},
+          {"name": "Damage", "value": "50-600"},
+          {"name": "Cast Time", "value": "1.5s"},
+          {"name": "Duration", "value": "10s"},
+          {"name": "Speed", "value": "12m/s"}
+        ]
+      }
+    ]
+  }

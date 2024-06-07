@@ -1,0 +1,72 @@
+{
+    "name": "Symmetra", "role": "Damage", "image": "assets/images/portraits/symmetra.png",
+    "total": "200", "normal": "100", "armor": "0", "shield": "100", "speed": "5.5m/s",
+    "abilities": [
+      {
+        "name": "Photon Projector",
+        "key": "Left Click",
+        "iconUrl": "assets/images/skills/dps/symmetra/1.png",
+        "description": "Symmetra’s weapon emits a ranged beam. It deals continuous damage that increases the longer it is connected, and constantly supply Symmetra with ammo/shields when damaging a barrier or shield health. Cannot headshot.",
+        "stats": [
+          {"name": "DPS", "value": "60/120/180\n1s per level"},
+          {"name": "Range", "value": "12m"},
+          {"name": "Shield", "value": "+30 hp/s\n+10 ammo/s"},
+          {"name": "Ammo", "value": "100\n(-10/s)"},
+          {"name": "Reload", "value": "1.5s"}
+        ]
+      },
+      {
+        "name": "Energy Ball",
+        "key": "Right Click",
+        "iconUrl": "assets/images/skills/dps/symmetra/1.png",
+        "description": "The projector can also release an explosive energy ball that deals high damage on contact. The longer Symmetra spent charging it, the more damage it deals. Cannot headshot.",
+        "stats": [
+          {"name": "Damage", "value": "50 (impact)\n50 (explosive)"},
+          {"name": "Charge Time", "value": "up to 1s"},
+          {"name": "Ammo", "value": "100"},
+          {"name": "Ammo Use", "value": "1-10"},
+          {"name": "Reload", "value": "1.8s"}
+        ]
+      },
+      {
+        "name": "Sentry Turret",
+        "key": "Shift",
+        "iconUrl": "assets/images/skills/dps/symmetra/Shift.png",
+        "description": "Symmetra launches a small turret that automatically fires speed-reducing blasts at the nearest enemy within range, revealing them to allies. Up to 3 turrets can be built on the battlefield at once. Cannot headshot.",
+        "stats": [
+          {"name": "HP", "value": "30"},
+          {"name": "DPS", "value": "25"},
+          {"name": "Slow", "value": "-15%"},
+          {"name": "Reveal", "value": "1s"},
+          {"name": "Casting", "value": "0.2s cast\n1s deploy"},
+          {"name": "Ammo", "value": "3"},
+          {"name": "Reload", "value": "10s"}
+        ]
+      },
+      {
+        "name": "Teleporter",
+        "key": "E",
+        "iconUrl": "assets/images/skills/dps/symmetra/Q1.png",
+        "description": "Symmetra places a temporary teleporter exit pad at a distance and connects it to a teleporter entry pad at her current location. Allies (and some of their abilities, such as Junkrat’s RIP-Tire) can travel from the entry pad to the exit pad instantly.",
+        "stats": [
+          {"name": "HP", "value": "50 hp\n150 shield"},
+          {"name": "Cast Time", "value": "1s to deploy"},
+          {"name": "Range", "value": "30m"},
+          {"name": "Duration", "value": "10s"},
+          {"name": "Cooldown", "value": "12s"}
+        ]
+      },
+      {
+        "name": "Photon Barrier",
+        "key": "Q",
+        "iconUrl": "assets/images/skills/dps/symmetra/Q2.png",
+        "description": "Symmetra deploys a massive energy barrier which prevents ranged attacks and is big enough to cut through the entire map.",
+        "stats": [
+          {"name": "Barrier", "value": "4000 hp"},
+          {"name": "Cast Range", "value": "25m"},
+          {"name": "Size", "value": "∞"},
+          {"name": "Duration", "value": "12s"}
+        ]
+      }
+    ]
+  }

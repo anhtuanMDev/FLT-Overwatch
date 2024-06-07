@@ -1,0 +1,85 @@
+{
+    "name": "Ramattra", "role": "Tank", "image": "assets/images/portraits/ramattra.png",
+    "total": "450", "normal": "350", "armor": "100 / 225 during Nemesis", "shield": "0", "speed": "5.5m/s",
+    "abilities": [
+      {
+        "name": "Void Accelerator",
+        "key": "Left Click (Omnic form)",
+        "iconUrl": "assets/images/skills/tanks/ramattra/1.webp",
+        "description": "Fire a stream of projectiles in a fixed pattern.",
+        "stats": [
+          {"name": "Damage", "value": "5"},
+          {"name": "Fire Rate", "value": "25 rps"},
+          {"name": "Ammo", "value": "100"},
+          {"name": "Reload", "value": "1s"}
+        ]
+      },
+      {
+        "name": "Void Barrier",
+        "key": "Right Click (Omnic form)",
+        "iconUrl": "assets/images/skills/tanks/ramattra/2.webp",
+        "description": "Create a barrier at the targeted location.",
+        "stats": [
+          {"name": "Shield HP", "value": "1000"},
+          {"name": "Duration", "value": "4s"},
+          {"name": "Cooldown", "value": "13s"}
+        ]
+      },
+      {
+        "name": "Nemesis Form",
+        "key": "Shift",
+        "iconUrl": "assets/images/skills/tanks/ramattra/S.webp",
+        "description": "Transform into Nemesis Form, changing your attacks and gaining bonus armor.",
+        "stats": [
+          {"name": "Armor", "value": "+225"},
+          {"name": "Movespeed", "value": "+20%"},
+          {"name": "Duration", "value": "8s"},
+          {"name": "Cooldown", "value": "7s"}
+        ]
+      },
+      {
+        "name": "Pummel",
+        "key": "Left Click (Nemesis form)",
+        "iconUrl": "assets/images/skills/tanks/ramattra/3.webp",
+        "description": "Punch forward, creating a wave of energy that pierces all enemies and barriers in its path.",
+        "stats": [
+          {"name": "Damage", "value": "60"},
+          {"name": "Fire Rate", "value": "1.67 rps"},
+          {"name": "Ammo", "value": "∞"}
+        ]
+      },
+      {
+        "name": "Block",
+        "key": "Right Click (Nemesis form)",
+        "iconUrl": "assets/images/skills/tanks/ramattra/4.webp",
+        "description": "Significantly reduces damage taken from the front and reduces movement speed.",
+        "stats": [
+          {"name": "Dmg. reduction", "value": "75%"},
+          {"name": "Mov. speed", "value": "-50%"}
+        ]
+      },
+      {
+        "name": "Ravenous Vortex",
+        "key": "E",
+        "iconUrl": "assets/images/skills/tanks/ramattra/E.webp",
+        "description": "Fire a nano ball, which explodes when it hits the ground, spreading a damaging field. Affected enemies are slowed and pulled downward.",
+        "stats": [
+          {"name": "Damage", "value": "15 per second"},
+          {"name": "Mov. speed", "value": "-40%"},
+          {"name": "Gravity", "value": "+100%"},
+          {"name": "Duration", "value": "3s"},
+          {"name": "Cooldown", "value": "12s"}
+        ]
+      },
+      {
+        "name": "Annihilation",
+        "key": "Q",
+        "iconUrl": "assets/images/skills/tanks/ramattra/Q.webp",
+        "description": "Enter Nemesis Form and create a deadly swarm that lashes out at nearby enemies, persisting longer when damaging enemies.",
+        "stats": [
+          {"name": "Damage", "value": "30 per second"},
+          {"name": "Duration", "value": "3 - 20 seconds"}
+        ]
+      }
+    ]
+  }

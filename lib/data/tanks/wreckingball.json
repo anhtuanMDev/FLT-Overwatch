@@ -1,0 +1,77 @@
+{
+    "name": "Wrecking Ball", "role": "Tank", "image": "assets/images/portraits/wreckingball.png",
+    "total": "700", "normal": "450", "armor": "100", "shield": "150", "speed": "5.5m/s",
+    "abilities": [
+      {
+        "name": "Quad Cannons",
+        "key": "Left Click",
+        "iconUrl": "assets/images/skills/tanks/wreckingball/1.png",
+        "description": "Automatic Assault Weapons. Can headshot.",
+        "stats": [
+          {"name": "Damage", "value": "1.5-5"},
+          {"name": "Fire Rate", "value": "25 rps"},
+          {"name": "Ammo", "value": "80"},
+          {"name": "Reload", "value": "1.6s"}
+        ]
+      },
+      {
+        "name": "Grappling Claw",
+        "key": "Right Click",
+        "iconUrl": "assets/images/skills/tanks/wreckingball/2.png",
+        "description": "Launch a grappling claw to rapidly swing around the area. Enables high speed collisions to damage and knockback enemies.",
+        "stats": [
+          {"name": "Damage", "value": "50"},
+          {"name": "Speed", "value": "+100%"},
+          {"name": "Duration", "value": "6s"},
+          {"name": "Cooldown", "value": "5s"}
+        ]
+      },
+      {
+        "name": "Roll",
+        "key": "Shift",
+        "iconUrl": "assets/images/skills/tanks/wreckingball/shift.png",
+        "description": "Transform into a ball and increase maximum movement speed. Automatically reloads Quad Cannons after a short time in this form.",
+        "stats": [
+          {"name": "Speed", "value": "+50%"},
+          {"name": "Auto. Reload", "value": "2s"},
+          {"name": "Duration", "value": "∞"}
+        ]
+      },
+      {
+        "name": "Adaptive Shield",
+        "key": "E",
+        "iconUrl": "assets/images/skills/tanks/wreckingball/e.png",
+        "description": "Create temporary personal shields. Amount increases with more enemies nearby.",
+        "stats": [
+          {"name": "Overhealth", "value": "100 (base)\n+100/enemy nearby"},
+          {"name": "Duration", "value": "7s"},
+          {"name": "Cooldown", "value": "15s"}
+        ]
+      },
+      {
+        "name": "Piledriver",
+        "key": "Crouch Button",
+        "iconUrl": "assets/images/skills/tanks/wreckingball/crouch.png",
+        "description": "Slam into the ground to damage and launch enemies upward.",
+        "stats": [
+          {"name": "Damage", "value": "20-100"},
+          {"name": "Radius", "value": "8m"},
+          {"name": "Cast Time", "value": "1s"},
+          {"name": "Cooldown", "value": "8s"}
+        ]
+      },
+      {
+        "name": "Minefield",
+        "key": "Q",
+        "iconUrl": "assets/images/skills/tanks/wreckingball/q.png",
+        "description": "Deploy a massive field of proximity mines",
+        "stats": [
+          {"name": "# of mines", "value": "12"},
+          {"name": "Damage", "value": "130"},
+          {"name": "Mine HP", "value": "50"},
+          {"name": "Activation", "value": "1.25s"},
+          {"name": "Duration", "value": "20s"}
+        ]
+      }
+    ]
+  }

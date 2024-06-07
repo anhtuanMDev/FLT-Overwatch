@@ -1,0 +1,75 @@
+{
+    "name": "Zenyatta", "role": "Support", "image": "assets/images/portraits/zenyatta.png",
+    "total": "225", "normal": "75", "armor": "0", "shield": "150", "speed": "5.5m/s",
+    "abilities": [
+      {
+        "name": "Snap Kick",
+        "key": "Passive (Melee)",
+        "iconUrl": "passive_default.png",
+        "description": "Quick melee damage increased, and its knockback is significantly increased.",
+        "stats": [
+          {"name": "Melee Damage", "value": "+50% (45)"},
+          {"name": "Knockback", "value": "+?%"}
+        ]
+      },
+      {
+        "name": "Orb of Destruction",
+        "key": "Left Click",
+        "iconUrl": "assets/images/skills/supports/zenyatta/1.png",
+        "description": "Zenyatta projects his destructive energy orbs individually. Can headshot.",
+        "stats": [
+          {"name": "Damage", "value": "48"},
+          {"name": "Fire Rate", "value": "2.5 rps"},
+          {"name": "Ammo", "value": "25"},
+          {"name": "Reload", "value": "1.5s"}
+        ]
+      },
+      {
+        "name": "Orb Volley",
+        "key": "Right Click (hold)",
+        "iconUrl": "assets/images/skills/supports/zenyatta/1.png",
+        "description": "Zenyatta projects his destructive energy orbs in a rapid-fire volley after a few seconds spent gathering power. Can headshot.",
+        "stats": [
+          {"name": "Damage", "value": "46/orb"},
+          {"name": "Charging", "value": "0.52s per orb\n(can hold up to 3s)"},
+          {"name": "Ammo Use", "value": "up to 5"},
+          {"name": "Cooldown", "value": "0.6s"}
+        ]
+      },
+      {
+        "name": "Orb of Harmony",
+        "key": "Shift",
+        "iconUrl": "assets/images/skills/supports/zenyatta/Shift.png",
+        "description": "Zenyatta casts an orb over the shoulder of a targeted ally. So long as Zenyatta maintains line of sight, the orb slowly restores health to his ally. Only one ally can receive the orb's benefit at a time.",
+        "stats": [
+          {"name": "Healing", "value": "30 hp/s"},
+          {"name": "Ammo", "value": "One active"},
+          {"name": "Duration", "value": "5s (out of sight)"}
+        ]
+      },
+      {
+        "name": "Orb of Discord",
+        "key": "E",
+        "iconUrl": "assets/images/skills/supports/zenyatta/E.png",
+        "description": "Attaching the orb of discord to an opponent amplifies the amount of damage they receive for as long as Zenyatta maintains line of sight. Only one opponent can suffer the orb's effects at a time.",
+        "stats": [
+          {"name": "Damage", "value": "+25%"},
+          {"name": "Ammo", "value": "One active"},
+          {"name": "Duration", "value": "1.5s (out of sight)"},
+          {"name": "Cooldown", "value": "7s (same target)"}
+        ]
+      },
+      {
+        "name": "Transcendence",
+        "key": "Q",
+        "iconUrl": "assets/images/skills/supports/zenyatta/Q.png",
+        "description": "Zenyatta enters a state of heightened existence for a short period of time. While transcendent, Zenyatta cannot use abilities or weapons, but is immune to damage and automatically restores his health and that of nearby allies.",
+        "stats": [
+          {"name": "Heal Rate", "value": "300 hp/s"},
+          {"name": "Radius", "value": "10m"},
+          {"name": "Mov. Speed", "value": "+100%"},
+          {"name": "Duration", "value": "6s"}
+        ]
+      }
+    ]
+  }

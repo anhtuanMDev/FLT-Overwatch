@@ -1,0 +1,72 @@
+{
+    "name": "Hanzo", "role": "Damage", "image": "assets/images/portraits/hanzo.png",
+    "total": "200", "normal": "200", "armor": "0", "shield": "0", "speed": "5.5m/s",
+    "abilities": [
+      {
+        "name": "Wall Climb",
+        "key": "Passive (Space)",
+        "iconUrl": "assets/images/skills/dps/hanzo/Passive.png",
+        "description": "Hanzo can climb any vertical surface.",
+        "stats": [
+          {"name": "Speed", "value": "+30%" },
+          {"name": "Duration", "value": "up to 1s" }
+        ]
+      },
+      {
+        "name": "Lunge",
+        "key": "Space",
+        "iconUrl": "assets/images/skills/dps/hanzo/Passive2.png",
+        "description": "Press jump while in the air to leap horizontally",
+        "stats": [
+          {"name": "Cooldown", "value": "4s" }
+        ]
+      },
+      {
+        "name": "Storm Bow",
+        "key": "Left Click",
+        "iconUrl": "assets/images/skills/dps/hanzo/1.png",
+        "description": "Hanzo nocks and fires an arrow at his target. Can headshot.",
+        "stats": [
+          {"name": "Damage", "value": "27.2-120"},
+          {"name": "Fire Rate (rps)", "value": "2 - 0.8"},
+          {"name": "Ammo", "value": "∞"},
+          {"name": "Speed", "value": "-30%"}
+        ]
+      },
+      {
+        "name": "Sonic Arrow",
+        "key": "Shift",
+        "iconUrl": "assets/images/skills/dps/hanzo/Shift.png",
+        "description": "Hanzo launches an arrow that contains a sonar tracking device. Any enemy within its detection radius is visibly marked, making them easier for Hanzo and his allies to hunt down. Arrow itself does the same damage as Storm Bow, and can also headshot.",
+        "stats": [
+          {"name": "Radius", "value": "9m"},
+          {"name": "Duration", "value": "6s"},
+          {"name": "Cooldown", "value": "12s"}
+        ]
+      },
+      {
+        "name": "Storm Arrows",
+        "key": "E",
+        "iconUrl": "assets/images/skills/dps/hanzo/E.png",
+        "description": "Hanzo’s next several arrows fire instantly, and can richochet once, but at reduced damage. Can headshot.",
+        "stats": [
+          {"name": "Damage", "value": "65"},
+          {"name": "Fire Rate", "value": "4.16 rps"},
+          {"name": "Ammo", "value": "5"},
+          {"name": "Duration", "value": "5s"},
+          {"name": "Cooldown", "value": "10s"}
+        ]
+      },
+      {
+        "name": "Dragonstrike",
+        "key": "Q",
+        "iconUrl": "assets/images/skills/dps/hanzo/Q.png",
+        "description": "Hanzo summons a Spirit Dragon which travels through the air in a line. It passes through walls in its way, devouring any enemies it encounters.",
+        "stats": [
+          {"name": "Arrow Damage", "value": "125"},
+          {"name": "Dragon Damage", "value": "150 per dragon\n993.6 (stationary target)"},
+          {"name": "Cast Time", "value": "1.5s"}
+        ]
+      }
+    ]
+  }

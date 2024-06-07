@@ -1,0 +1,76 @@
+{
+    "name": "Doomfist", "role": "Tank", "image": "assets/images/portraits/doomfist.png",
+    "total": "450", "normal": "450", "armor": "0", "shield": "150 (max)", "speed": "5.5m/s",
+    "abilities": [
+      {
+        "name": "The Best Defense...",
+        "key": "Passive",
+        "iconUrl": "assets/images/skills/tanks/doomfist/The_best_defense.png",
+        "description": "Doomfist generates temporary personal shields when he deals ability damage.",
+        "stats": [
+          {"name": "Maximum", "value": "200 shield"},
+          {"name": "Shield", "value": "+ 35 / hit\n+ 75 / hit (ult)"},
+          {"name": "Shield Decay", "value": "-3 shield/s"}
+        ]
+      },
+      {
+        "name": "Hand Cannon",
+        "key": "Left Click",
+        "iconUrl": "assets/images/skills/tanks/doomfist/Hand_cannon.png",
+        "description": "Doomfist fires a short-range burst from the knuckles of his fist. Its ammunition is automatically regenerated over a short time.",
+        "stats": [
+          {"name": "Damage", "value": "1.8-5"},
+          {"name": "Fire Rate (rps)", "value": "3.125 (11 pellets per shot)"},
+          {"name": "Ammo", "value": "4"},
+          {"name": "Reload", "value": "0.4s / round"}
+        ]
+      },
+      {
+        "name": "Rocket Punch",
+        "key": "Right Click",
+        "iconUrl": "assets/images/skills/tanks/doomfist/2.png",
+        "description": "After charging up, Doomfist lunges forward and knocks an enemy back, dealing additional damage if they impact a wall.",
+        "stats": [
+          {"name": "Damage", "value": "Initial hit: 25-50\nWall slam: 10-30"},
+          {"name": "Duration", "value": "1s full-charge\n0.15s stun"},
+          {"name": "Cooldown", "value": "4s"},
+          {"name": "Empowered", "value": "+50% damage\n+50% speed\n0.15-0.6s stun"}
+        ]
+      },
+      {
+        "name": "Seismic Slam",
+        "key": "Shift",
+        "iconUrl": "assets/images/skills/tanks/doomfist/Seismic_Slam.png",
+        "description": "Doomfist leaps forward and smashes into the ground.",
+        "stats": [
+          {"name": "Damage", "value": "50"},
+          {"name": "Cooldown", "value": "6s"}
+        ]
+      },
+      {
+        "name": "Power Block",
+        "key": "Shift",
+        "iconUrl": "assets/images/skills/tanks/doomfist/E.png",
+        "description": "Protect yourself from frontal attacks. Taking 25 damage empowers the next Rocket Punch and immediately resets its cooldown (100 mitigated = 125 incoming = 25 hp lost).",
+        "stats": [
+          {"name": "Dmg. Reduction", "value": "80%"},
+          {"name": "Mov. Speed", "value": "-35%"},
+          {"name": "Duration", "value": "2.5s"},
+          {"name": "Cooldown", "value": "7s"}
+        ]
+      },
+      {
+        "name": "Meteor Strike",
+        "key": "Q",
+        "iconUrl": "assets/images/skills/tanks/doomfist/Meteor_Strike.png",
+        "description": "Doomfist leaps into the sky, then crashes to the ground, dealing significant damage. Doomfist is invincible during his ultimate, and speeds up cooldown rate of his abilities by 100% while in the air. Empowers Rocket Punch on landing.",
+        "stats": [
+          {"name": "Damage", "value": "Inner ring: 300\nOuter ring: 15-100"},
+          {"name": "HP", "value": "+75/s"},
+          {"name": "Cast Time", "value": "0.5s\n1s landing"},
+          {"name": "Duration", "value": "4s"},
+          {"name": "Slow Enemies", "value": "-50% for 3s"}
+        ]
+      }
+    ]
+  }

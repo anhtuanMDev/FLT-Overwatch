@@ -1,0 +1,62 @@
+{
+    "name": "Pharah", "role": "Damage", "image": "assets/images/portraits/pharah.png",
+    "total": "200", "normal": "200", "armor": "0", "shield": "0", "speed": "5.5m/s",
+    "abilities": [
+      {
+        "name": "Hover Jets",
+        "key": "Left Click",
+        "iconUrl": "assets/images/skills/dps/pharah/icon.png",
+        "description": "Hold to hover. Uses a resource meter that recharges automatically when not in use.",
+        "stats": [
+          {"name": "Movement Speed", "value": "+20%"},
+          {"name": "Duration", "value": "Up to 2s"},
+          {"name": "Recharge", "value": "43%/s"}
+        ]
+      },
+      {
+        "name": "Rocket Launcher",
+        "key": "Left Click",
+        "iconUrl": "assets/images/skills/dps/pharah/1.png",
+        "description": "Pharah’s primary weapon launches rockets that deal significant damage in a wide blast radius.",
+        "stats": [
+          {"name": "Damage", "value": "120 (direct hit)\n25-80 (splash)\n12-40 (self)"},
+          {"name": "Fire Rate (rps)", "value": "1.18"},
+          {"name": "Ammo", "value": "6"},
+          {"name": "Reload", "value": "1.5s"}
+        ]
+      },
+      {
+        "name": "Jump Jet",
+        "key": "Shift",
+        "iconUrl": "assets/images/skills/dps/pharah/Shift.png",
+        "description": "Propelled by her suit’s thrusters, Pharah soars high into the air.",
+        "stats": [
+          {"name": "Height", "value": "+25m"},
+          {"name": "Speed", "value": "20m/s"},
+          {"name": "Cooldown", "value": "10s"}
+        ]
+      },
+      {
+        "name": "Concussive Blast",
+        "key": "E",
+        "iconUrl": "assets/images/skills/dps/pharah/E.png",
+        "description": "Pharah looses a wrist rocket that knocks back any enemies it strikes.",
+        "stats": [
+          {"name": "Damage", "value": "30 (direct hit)"},
+          {"name": "Knockback", "value": "8m radius"},
+          {"name": "Cooldown", "value": "9s"}
+        ]
+      },
+      {
+        "name": "Barrage",
+        "key": "Q",
+        "iconUrl": "assets/images/skills/dps/pharah/Q.png",
+        "description": "The rockets cover a large area in the direction of the player's crosshair. The player must remain stationary while the ability is active.",
+        "stats": [
+          {"name": "Damage", "value": "40"},
+          {"name": "Fire Rate (rps)", "value": "31"},
+          {"name": "Duration", "value": "2.5s"}
+        ]
+      }
+    ]
+  }

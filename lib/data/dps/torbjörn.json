@@ -1,0 +1,81 @@
+{
+    "name": "Torbjörn", "role": "Damage", "image": "assets/images/portraits/torbjörn.png",
+    "total": "250", "normal": "200", "armor": "50", "shield": "0", "speed": "5.5m/s",
+    "abilities": [
+      {
+        "name": "Rivet Gun",
+        "key": "Left Click",
+        "iconUrl": "assets/images/skills/dps/torbjörn/1.png",
+        "description": "Torbjörn fires a single arcing rivet. Turret targets enemy hit by primary fire. Can headshot.",
+        "stats": [
+          {"name": "Damage", "value": "70"},
+          {"name": "Fire Rate (rps)", "value": "1.96"},
+          {"name": "Ammo", "value": "18"},
+          {"name": "Reload", "value": "2s"}
+        ]
+      },
+      {
+        "name": "Rivet Gun (Alt Fire)",
+        "key": "Right Click",
+        "iconUrl": "assets/images/skills/dps/torbjörn/1.png",
+        "description": "Torbjörn ejects molten metal from his gun in a shotgun-like burst. Can headshot",
+        "stats": [
+          {"name": "Damage", "value": "3.75-12.5\n(125 total)"},
+          {"name": "Fire Rate", "value": "1.43 rps\n(10 pellets/shot)"},
+          {"name": "Ammo", "value": "18\n(2 per shot)"},
+          {"name": "Reload", "value": "2s"}
+        ]
+      },
+      {
+        "name": "Forge Hammer",
+        "key": "Secondary Weapon",
+        "iconUrl": "assets/images/skills/dps/torbjörn/2.png",
+        "description": "This multipurpose hammer repairs turrets and, in a pinch, can also be used as a weapon. While Forge Hammer is equipped, Rivet Gun automatically reloads itself after a short period of time.",
+        "stats": [
+          {"name": "Damage", "value": "55"},
+          {"name": "Turret Repair", "value": "+50 hp"},
+          {"name": "Fire Rate", "value": "1.4 swing/s"},
+          {"name": "Gun Reload", "value": "after 2s"}
+        ]
+      },
+      {
+        "name": "Deploy Turret",
+        "key": "Shift",
+        "iconUrl": "assets/images/skills/dps/torbjörn/Shift.png",
+        "description": "Torbjörn deploys a self-building turret which automatically tracks and attacks enemies. Turret cannot headshot.",
+        "stats": [
+          {"name": "Deploy Time", "value": "3s"},
+          {"name": "Health", "value": "225"},
+          {"name": "Damage", "value": "11"},
+          {"name": "Fire Rate", "value": "4 rps"},
+          {"name": "Cooldown", "value": "5s\n12s if destroyed"}
+        ]
+      },
+      {
+        "name": "Overload",
+        "key": "E",
+        "iconUrl": "assets/images/skills/dps/torbjörn/E.png",
+        "description": "Torbjörn gains additional extra health as well as improved attack, movement, and reload speed. Instantly restores 6 ammo upon activation.",
+        "stats": [
+          {"name": "Health", "value": "+100\noverhealth"},
+          {"name": "Speed", "value": "+30% movement\n+40% attack/reload"},
+          {"name": "Duration", "value": "5s"},
+          {"name": "Cooldown", "value": "10s"}
+        ]
+      },
+      {
+        "name": "Molten Core",
+        "key": "Q",
+        "ultCharge": "1625",
+        "iconUrl": "assets/images/skills/dps/torbjörn/Q.png",
+        "description": "Torbjörn creates pools of molten slag that deal massive, sustained damage (plus bonus damage to armor), and can prevent enemies from moving through key locations.",
+        "stats": [
+          {"name": "DPS", "value": "160\n250 to armor"},
+          {"name": "Fire Rate", "value": "7 rps"},
+          {"name": "Ammo", "value": "10"},
+          {"name": "Cast Time", "value": "0.6s"},
+          {"name": "Duration", "value": "5.5s\n10s (pools)"}
+        ]
+      }
+    ]
+  }

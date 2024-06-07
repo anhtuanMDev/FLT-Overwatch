@@ -1,0 +1,72 @@
+{
+    "name": "Genji", "role": "Damage", "image": "assets/images/portraits/genji.png",
+    "total": "200", "normal": "200", "armor": "0", "shield": "0", "speed": "6m/s",
+    "abilities": [
+      {
+        "name": "Cyber-Agility",
+        "key": "Space",
+        "iconUrl": "assets/images/skills/dps/genji/Passive.png",
+        "description": "Thanks to his cybernetic abilities, Genji can climb walls and perform jumps in mid-air.",
+        "stats": [
+        ]
+      },
+      {
+        "name": "Shuriken",
+        "key": "Left Click",
+        "iconUrl": "assets/images/skills/dps/genji/1.png",
+        "description": "Genji looses three deadly throwing stars in quick succession.",
+        "stats": [
+          {"name": "Damage", "value": "27"},
+          {"name": "Fire Rate (rps)", "value": "1.14 (3 per shot)"},
+          {"name": "Ammo", "value": "30"},
+          {"name": "Reload", "value": "1.5s"}
+        ]
+      },
+      {
+        "name": "Fan of Blades",
+        "key": "Right Click",
+        "iconUrl": "assets/images/skills/dps/genji/1.png",
+        "description": "Alternatively, he can throw three shuriken in a wider spread.",
+        "stats": [
+          {"name": "Damage", "value": "27"},
+          {"name": "Fire Rate (rps)", "value": "1.47 (3 per shot)\n0.68s recovery"},
+          {"name": "Ammo", "value": "30"},
+          {"name": "Reload", "value": "1.5s"}
+        ]
+      },
+      {
+        "name": "Swift Strike",
+        "key": "Shift",
+        "iconUrl": "assets/images/skills/dps/genji/Shift.png",
+        "description": "Genji dashes in the direction of the cursor, dealing damage to every enemy he passes through. The cooldown is refreshed if he kills someone.",
+        "stats": [
+          {"name": "Damage", "value": "50"},
+          {"name": "Cooldown", "value": "8s"},
+          {"name": "Duration", "value": "0.4s"}
+        ]
+      },
+      {
+        "name": "Deflect",
+        "key": "E",
+        "iconUrl": "assets/images/skills/dps/genji/E.png",
+        "description": "While the ability is active, any frontal ranged attack will be deflected in the direction of Genji's crosshairs. Using Swift Strike or Dragonblade will cancel Deflect.",
+        "stats": [
+          {"name": "Cooldown", "value": "8s"},
+          {"name": "Duration", "value": "2s"}
+        ]
+      },
+      {
+        "name": "Dragonblade",
+        "key": "Q",
+        "iconUrl": "assets/images/skills/dps/genji/Q.png",
+        "description": "Genji brandishes his katana for a brief period of time. Until he sheathes his sword, Genji can deliver killing strikes to any targets within his reach.",
+        "stats": [
+          {"name": "Damage", "value": "110"},
+          {"name": "Fire Rate", "value": "1.11 rps"},
+          {"name": "Cast Time", "value": "1s"},
+          {"name": "Movespeed", "value": "+30%"},
+          {"name": "Duration", "value": "6s"}
+        ]
+      }
+    ]
+  }

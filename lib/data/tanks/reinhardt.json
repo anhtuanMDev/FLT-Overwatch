@@ -1,0 +1,66 @@
+{
+    "name": "Reinhardt", "role": "Tank", "image": "assets/images/portraits/reinhardt.png",
+    "total": "600", "normal": "350", "armor": "250", "shield": "0", "speed": "5.5m/s",
+    "abilities": [
+      {
+        "name": "Rocket Hammer",
+        "key": "Left Click",
+        "iconUrl": "assets/images/skills/tanks/reinhardt/1.png",
+        "description": "Reinhardt`s Rocket Hammer is an exemplary melee weapon, able to deal punishing damage in a wide arc with every swing. Cannot headshot.",
+        "stats": [
+          {"name": "Damage", "value": "85"},
+          {"name": "Fire Rate", "value": "1.11 swing/s"},
+          {"name": "Range", "value": "5m"}
+        ]
+      },
+      {
+        "name": "Barrier Field",
+        "key": "Right Click",
+        "iconUrl": "assets/images/skills/tanks/reinhardt/2.png",
+        "description": "Reinhardt projects a broad, forward-facing energy shield, which can absorb substantial damage before it is destroyed. Though Reinhardt can protect himself and his companions behind the shield, he cannot attack while sustaining it.",
+        "stats": [
+          {"name": "Shield HP", "value": "1400"},
+          {"name": "Shield Regen", "value": "144 hp/s after\n2s not in use"},
+          {"name": "Speed", "value": "70%"},
+          {"name": "Cooldown", "value": "5s if broken"}
+        ]
+      },
+      {
+        "name": "Charge",
+        "key": "Shift",
+        "iconUrl": "assets/images/skills/tanks/reinhardt/Shift.png",
+        "description": "Reinhardt propels himself forwards at significant speed but with reduced ability to turn. Charge ends after a period of time or when Reinhardt collides with a solid surface. The first enemy Reinhardt collides with during his charge is \"pinned\" to Reinhardt, and is dealt heavy damage if Reinhardt then impacts a solid surface. All other enemies are knocked away from him.",
+        "stats": [
+          {"name": "Damage", "value": "Bump: 50\nPinned: 225\nPin runs out: 0"},
+          {"name": "Speed", "value": "300%\n(16.66m/s)"},
+          {"name": "Cast Time", "value": "0.6s"},
+          {"name": "Duration", "value": "3s"},
+          {"name": "Cooldown", "value": "7s\n3s if interrupted"}
+        ]
+      },
+      {
+        "name": "Fire Strike",
+        "key": "E",
+        "iconUrl": "assets/images/skills/tanks/reinhardt/E.png",
+        "description": "By whipping his Rocket Hammer forward, Reinhardt slings a flaming projectile which pierces and damages any enemies it touches.",
+        "stats": [
+          {"name": "Damage", "value": "100"},
+          {"name": "Cast Time", "value": "0.5s"},
+          {"name": "Charges", "value": "2"},
+          {"name": "Cooldown", "value": "6s"}
+        ]
+      },
+      {
+        "name": "Earthshatter",
+        "key": "Q",
+        "iconUrl": "assets/images/skills/tanks/reinhardt/Q.png",
+        "description": "Reinhardt forcefully slams his rocket hammer into the ground, knocking down and damaging all enemies in front of him.",
+        "stats": [
+          {"name": "Damage", "value": "50\n+120 when <1.75m"},
+          {"name": "Stun", "value": "2.75s"},
+          {"name": "Cast Time", "value": "0.45s"},
+          {"name": "Range", "value": "20m"}
+        ]
+      }
+    ]
+  }

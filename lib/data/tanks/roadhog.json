@@ -1,0 +1,68 @@
+{
+    "name": "Roadhog", "role": "Tank", "image": "assets/images/portraits/roadhog.png",
+    "total": "700", "normal": "700", "armor": "0", "shield": "0", "speed": "5.5m/s",
+    "abilities": [
+      {
+        "name": "Scrap Gun",
+        "key": "Left Click",
+        "iconUrl": "assets/images/skills/tanks/roadhog/1.png",
+        "description": "Roadhog's Scrap Gun fires short-range blasts of pellets with a wide spread, and a shrapnel volley in the center with a smaller spread. Can headshot.",
+        "stats": [
+          {"name": "Damage", "value": "1.88-6.25 per pellet\n4.5-15 per shrapnel\n48-160 total"},
+          {"name": "Fire Rate", "value": "1.25 rps\n(16 pellets/shot)\n(4 shrapnel/shot)"},
+          {"name": "Ammo", "value": "6"},
+          {"name": "Reload", "value": "1.75s"}
+        ]
+      },
+      {
+        "name": "Take a Breather",
+        "key": "Right Click (Hold)",
+        "iconUrl": "assets/images/skills/tanks/roadhog/2.webp",
+        "description": "Roadhog heals himself and reduces damage taken.",
+        "stats": [
+          {"name": "Dmg. Reduction", "value": "40%"},
+          {"name": "Heal", "value": "180 hp/s"},
+          {"name": "Duration", "value": "0.5-2.5s"},
+          {"name": "Recharge", "value": "10s"},
+          {"name": "Cooldown", "value": "1.5s"}
+        ]
+      },
+      {
+        "name": "Chain Hook",
+        "key": "Shift",
+        "iconUrl": "assets/images/skills/tanks/roadhog/Shift.png",
+        "description": "Roadhog hurls his chain at a target; if it catches, he yanks them into close range.",
+        "stats": [
+          {"name": "Damage", "value": "5"},
+          {"name": "Cast Time", "value": "0.16s"},
+          {"name": "Range", "value": "20m"},
+          {"name": "Cooldown", "value": "6s"}
+        ]
+      },
+      {
+        "name": "Pig Pen",
+        "key": "E",
+        "iconUrl": "assets/images/skills/tanks/roadhog/E.webp",
+        "description": "Launch a trap that slows and damages nearby enemies.",
+        "stats": [
+          {"name": "Damage", "value": "60 initial\n30 per second"},
+          {"name": "Slow", "value": "-40%"},
+          {"name": "HP", "value": "100"},
+          {"name": "Duration", "value": "1s (delay)\n3s (triggered)"},
+          {"name": "Cooldown", "value": "12s"}
+        ]
+      },
+      {
+        "name": "Whole Hog",
+        "key": "Q",
+        "iconUrl": "assets/images/skills/tanks/roadhog/Q.png",
+        "description": "After cramming a top-loader onto his Scrap Gun, Roadhog pours in ammo. For a short time, he can crank out a stream of shrapnel that knocks back enemies. Can headshot.",
+        "stats": [
+          {"name": "Damage", "value": "6720 total"},
+          {"name": "Cast Time", "value": "0.5s"},
+          {"name": "Duration", "value": "8s"},
+          {"name": "Speed", "value": "-25%"}
+        ]
+      }
+    ]
+  }

@@ -1,0 +1,72 @@
+{
+    "name": "Bastion", "role": "Damage", "image": "assets/images/portraits/bastion.png",
+    "total": "300", "normal": "200", "armor": "100", "shield": "0", "speed": "5.5m/s",
+    "abilities": [
+      {
+        "name": "Ironclad",
+        "key": "Passive",
+        "iconUrl": "assets/images/skills/dps/bastion/Passive.png",
+        "description": "Reduce damage taken while transformed.",
+        "stats": [
+          {"name": "Dmg. reduction", "value": "20%"}
+        ]
+      },
+      {
+        "name": "Configuration: Recon",
+        "key": "Left Click (Recon mode)",
+        "iconUrl": "assets/images/skills/dps/bastion/1.png",
+        "description": "In Recon mode, Bastion is fully mobile, outfitted with a submachine gun that fires steady bursts of bullets at medium range. Can headshot.",
+        "stats": [
+          {"name": "Damage", "value": "7.5-25"},
+          {"name": "Fire Rate (rps)", "value": "5"},
+          {"name": "Ammo", "value": "25"},
+          {"name": "Reload", "value": "1.2s"}
+        ]
+      },
+      {
+        "name": "Configuration: Assault",
+        "key": "Left Click (Assault mode)",
+        "iconUrl": "assets/images/skills/dps/bastion/2.png",
+        "description": "A slow-moving tank with a powerful rotary cannon. Cannot headshot. ",
+        "stats": [
+          {"name": "Damage", "value": "12"},
+          {"name": "Fire Rate (rps)", "value": "30"},
+          {"name": "Ammo", "value": "∞"},
+          {"name": "Duration", "value": "6s"},
+          {"name": "Speed", "value": "-35%"}
+        ]
+      },
+      {
+        "name": "A-36 Tactical Grenade",
+        "key": "Right Click (Recon mode)",
+        "iconUrl": "assets/images/skills/dps/bastion/3.png",
+        "description": "Fire a bomb that bounces off walls and explodes when it impacts enemies or the ground.",
+        "stats": [
+          {"name": "Damage", "value": "15 impact\n50 - 100 splash\n25 - 50 self"},
+          {"name": "Duration", "value": "0.35s"},
+          {"name": "Cooldown", "value": "8s"}
+        ]
+      },
+      {
+        "name": "Reconfigure",
+        "key": "Shift",
+        "iconUrl": "assets/images/skills/dps/bastion/Shift.png",
+        "description": "Bastion transforms between its two primary combat modes to adapt to changing battlefield conditions.",
+        "stats": [
+          {"name": "Cast Time", "value": "1s (into assault)\n0.5s (into recon)"},
+          {"name": "Cooldown", "value": "12s"}
+        ]
+      },
+      {
+        "name": "Configuration: Artillery",
+        "key": "Q",
+        "iconUrl": "assets/images/skills/dps/bastion/Q.png",
+        "description": "Become immobile and fire up to 3 powerful artillery shells.",
+        "stats": [
+          {"name": "Damage", "value": "Center: 500\nInner ring: 200-250\nOuter ring: 30-200"},
+          {"name": "Ammo", "value": "3"},
+          {"name": "Duration", "value": "8s"}
+        ]
+      }
+    ]
+  }

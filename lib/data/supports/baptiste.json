@@ -1,0 +1,77 @@
+{
+    "name": "Baptiste", "role": "Support", "image": "assets/images/portraits/baptiste.png",
+    "total": "200", "normal": "200", "armor": "0", "shield": "0", "speed": "5.5m/s",
+    "abilities": [
+      {
+        "name": "Exo Boots",
+        "key": "Passive",
+        "iconUrl": "assets/images/skills/supports/baptiste/P.webp",
+        "description": "By first crouching, Baptiste can jump higher.",
+        "stats": [
+          {"name": "Charge Time", "value": "0.7s (full charge)"},
+          {"name": "Charge Duration", "value": "1s after uncrouch"}
+        ]
+      },
+      {
+        "name": "Biotic Launcher",
+        "key": "Left Click",
+        "iconUrl": "assets/images/skills/supports/baptiste/1.webp",
+        "description": "Baptiste’s three-round-burst Biotic Launcher rewards accuracy and recoil control with significant damage output.",
+        "stats": [
+          {"name": "Damage", "value": "7.2-24 / round"},
+          {"name": "Fire Rate", "value": "3 rounds / 0.6s"},
+          {"name": "Ammo", "value": "36"},
+          {"name": "Reload", "value": "1.5s"}
+        ]
+      },
+      {
+        "name": "Biotic Launcher (Alt Fire)",
+        "key": "Right Click",
+        "iconUrl": "assets/images/skills/supports/baptiste/1.webp",
+        "description": "Biotic Launcher also doubles as a healing device, lobbing projectiles that heal allies near the point of impact.",
+        "stats": [
+          {"name": "Healing", "value": "50 hp (splash)\n70 hp (direct hit)"},
+          {"name": "Radius", "value": "3m"},
+          {"name": "Fire Rate", "value": "1.11 rps"},
+          {"name": "Ammo", "value": "13"},
+          {"name": "Reload", "value": "1.5s"}
+        ]
+      },
+      {
+        "name": "Regenerative Burst",
+        "key": "Shift",
+        "iconUrl": "assets/images/skills/supports/baptiste/S.webp",
+        "description": "Baptiste activates an intense regenerative burst that heals himself and nearby allies instantly, with additional healing over time. Instant heal is doubled for targets less than half health.",
+        "stats": [
+          {"name": "Burst Heal", "value": "80 (<50% hp)\n40 (>50% hp)"},
+          {"name": "Heal Rate", "value": "10 hp/s"},
+          {"name": "Cast Time", "value": "0.3s"},
+          {"name": "Duration", "value": "4s"},
+          {"name": "Cooldown", "value": "15s"}
+        ]
+      },
+      {
+        "name": "Immortality Field",
+        "key": "E",
+        "iconUrl": "assets/images/skills/supports/baptiste/E.webp",
+        "description": "Baptiste uses a device to create a field that prevents allies from dying (any ally inside the field become immune to death, and their health cannot fall below a certain amount). The generator can be destroyed.",
+        "stats": [
+          {"name": "Health", "value": "125"},
+          {"name": "Minimum HP", "value": "25%"},
+          {"name": "Duration", "value": "5s"},
+          {"name": "Cooldown", "value": "25s"}
+        ]
+      },
+      {
+        "name": "Amplification Matrix",
+        "key": "Q",
+        "iconUrl": "assets/images/skills/supports/baptiste/Q.webp",
+        "description": "Baptiste creates a matrix that increases the damage and healing effects of friendly projectiles that pass through it.",
+        "stats": [
+          {"name": "Damage", "value": "+100%"},
+          {"name": "Healing", "value": "+100%"},
+          {"name": "Duration", "value": "10s"}
+        ]
+      }
+    ]
+  }

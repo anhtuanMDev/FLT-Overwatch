@@ -1,0 +1,74 @@
+{
+    "name": "Lifeweaver", "role": "Support", "image": "assets/images/portraits/lifeweaver.png",
+    "total": "225", "normal": "175", "armor": "0", "shield": "50", "speed": "5.5m/s",
+    "abilities": [
+      {
+        "name": "Rejuvenating Dash",
+        "key": "Space",
+        "iconUrl": "assets/images/skills/supports/lifeweaver/Passive.webp",
+        "description": "Dash towards your traveling direction and lightly heal yourself.",
+        "stats": [
+          {"name": "Heal", "value": "50"},
+          {"name": "Cooldown", "value": "5s"}
+        ]
+      },
+      {
+        "name": "Healing Blossom",
+        "key": "Left Click",
+        "iconUrl": "assets/images/skills/supports/lifeweaver/1.webp",
+        "description": "Hold to charge a healing burst. Release to heal a targeted ally. Automatically reload after a 2.5 seconds when inactive.",
+        "stats": [
+          {"name": "Heal", "value": "10-70"},
+          {"name": "Movespeed", "value": "-25% after 1s"},
+          {"name": "Fire Rate", "value": "1s charge\n0.3s recovery"},
+          {"name": "Ammo", "value": "16"},
+          {"name": "Reload", "value": "1.5s"}
+        ]
+      },
+      {
+        "name": "Thorn Volley",
+        "key": "Right Click",
+        "iconUrl": "assets/images/skills/supports/lifeweaver/2.webp",
+        "description": "Rapidly fire a spread of projectiles. Automatically reload after a 2.5 seconds when inactive.",
+        "stats": [
+          {"name": "Damage", "value": "6"},
+          {"name": "Fire Rate (rps)", "value": "11 (2 per shot)"},
+          {"name": "Ammo", "value": "80"},
+          {"name": "Reload", "value": "1.5s"}
+        ]
+      },
+      {
+        "name": "Petal Platform",
+        "key": "Shift",
+        "iconUrl": "assets/images/skills/supports/lifeweaver/Shift.webp",
+        "description": "Throw a platform that springs upwards when stepped on.",
+        "stats": [
+          {"name": "HP", "value": "400"},
+          {"name": "Duration", "value": "10s after triggered"},
+          {"name": "Cooldown", "value": "12s"}
+        ]
+      },
+      {
+        "name": "Life Grip",
+        "key": "E",
+        "iconUrl": "assets/images/skills/supports/lifeweaver/E.webp",
+        "description": "Pull an ally to your location, protecting them as they travel.",
+        "stats": [
+          {"name": "Heal", "value": "50"},
+          {"name": "Cooldown", "value": "19s"}
+        ]
+      },
+      {
+        "name": "Tree of Life",
+        "key": "Q",
+        "iconUrl": "assets/images/skills/supports/lifeweaver/Q.webp",
+        "description": "Place a tree that instantly heals allies upon sprouting and continues healing periodically as it lives.",
+        "stats": [
+          {"name": "Health", "value": "1200 tree hp\n100 overhealth"},
+          {"name": "Healing", "value": "150 (instant)\n75 hp/pulse\n50% as overhealth"},
+          {"name": "Pulse Rate", "value": "1 pulse every 1.75s"},
+          {"name": "Duration", "value": "15s"}
+        ]
+      }
+    ]
+  }
