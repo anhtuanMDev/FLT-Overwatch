@@ -1,6 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:herometrics/pages/home.dart';
 import 'package:herometrics/pages/map_page.dart';
+import 'package:herometrics/pages/patchnote.dart';
+import 'package:herometrics/pages/player_stats.dart';
 import 'package:herometrics/pages/search.dart';
 
 class GamemodePage extends StatefulWidget {
@@ -127,7 +129,13 @@ class _GamemodePageState extends State<GamemodePage> {
                   Text('Patch note'),
                 ],
               ),
-              onTap: () {},
+              onTap: () {
+                Navigator.push(
+                    context,
+                    MaterialPageRoute(
+                      builder: (context) => Patchnote(),
+                    ));
+              },
             ),
             ListTile(
               title: const Row(
@@ -139,7 +147,13 @@ class _GamemodePageState extends State<GamemodePage> {
                   Text('Player Stats'),
                 ],
               ),
-              onTap: () {},
+              onTap: () {
+                Navigator.push(
+                    context,
+                    MaterialPageRoute(
+                      builder: (context) => PlayerStats(),
+                    ));
+              },
             ),
           ],
         ),

@@ -1,14 +1,14 @@
 import 'package:flutter/material.dart';
 import 'package:webview_flutter/webview_flutter.dart';
 
-class PlayerStats extends StatefulWidget {
-  const PlayerStats({super.key});
+class Patchnote extends StatefulWidget {
+  const Patchnote({super.key});
 
   @override
-  _PlayerStatsState createState() => _PlayerStatsState();
+  _PatchnoteState createState() => _PatchnoteState();
 }
 
-class _PlayerStatsState extends State<PlayerStats> {
+class _PatchnoteState extends State<Patchnote> {
   late final WebViewController _controller;
 
   @override
@@ -17,7 +17,7 @@ class _PlayerStatsState extends State<PlayerStats> {
     // Initialize the controller
     _controller = WebViewController()
       ..loadRequest(
-        Uri.parse('https://www.overbuff.com/'),
+        Uri.parse('https://overwatch.blizzard.com/en-us/news/patch-notes/'),
       );
   }
 
@@ -25,7 +25,7 @@ class _PlayerStatsState extends State<PlayerStats> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text('Player Stats'),
+        title: Text('Patch Notes'),
       ),
       body: WebViewWidget(controller: _controller),
     );

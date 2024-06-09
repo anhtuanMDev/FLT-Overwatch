@@ -4,6 +4,8 @@ import 'package:herometrics/data/mapData.dart';
 import 'package:herometrics/models/map_model.dart';
 import 'package:herometrics/pages/gamemode_page.dart';
 import 'package:herometrics/pages/home.dart';
+import 'package:herometrics/pages/patchnote.dart';
+import 'package:herometrics/pages/player_stats.dart';
 import 'package:herometrics/pages/search.dart';
 
 class MapPage extends StatefulWidget {
@@ -188,7 +190,13 @@ class _MapPageState extends State<MapPage> {
                   Text('Patch note'),
                 ],
               ),
-              onTap: () {},
+              onTap: () {
+                Navigator.push(
+                    context,
+                    MaterialPageRoute(
+                      builder: (context) => Patchnote(),
+                    ));
+              },
             ),
             ListTile(
               title: const Row(
@@ -200,7 +208,13 @@ class _MapPageState extends State<MapPage> {
                   Text('Player Stats'),
                 ],
               ),
-              onTap: () {},
+              onTap: () {
+                Navigator.push(
+                    context,
+                    MaterialPageRoute(
+                      builder: (context) => PlayerStats(),
+                    ));
+              },
             ),
           ],
         ),

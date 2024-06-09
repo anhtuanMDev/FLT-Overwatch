@@ -4,6 +4,8 @@ import 'package:herometrics/data/heroes.dart';
 import 'package:herometrics/pages/gamemode_page.dart';
 import 'package:herometrics/pages/heroDetail.dart';
 import 'package:herometrics/pages/map_page.dart';
+import 'package:herometrics/pages/patchnote.dart';
+import 'package:herometrics/pages/player_stats.dart';
 import 'package:herometrics/pages/search.dart';
 import 'package:herometrics/models/hero_model.dart';
 
@@ -181,7 +183,13 @@ class _HomeState extends State<Home> {
                   Text('Patch note'),
                 ],
               ),
-              onTap: () {},
+              onTap: () {
+                Navigator.push(
+                    context,
+                    MaterialPageRoute(
+                      builder: (context) => Patchnote(),
+                    ));
+              },
             ),
             ListTile(
               title: const Row(
@@ -193,7 +201,13 @@ class _HomeState extends State<Home> {
                   Text('Player Stats'),
                 ],
               ),
-              onTap: () {},
+              onTap: () {
+                Navigator.push(
+                    context,
+                    MaterialPageRoute(
+                      builder: (context) => PlayerStats(),
+                    ));
+              },
             ),
           ],
         ),
