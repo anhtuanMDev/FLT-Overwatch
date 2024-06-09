@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:herometrics/components/card/heroNameCard.dart';
 import 'package:herometrics/data/heroes.dart';
+import 'package:herometrics/pages/gamemode_page.dart';
 import 'package:herometrics/pages/heroDetail.dart';
 import 'package:herometrics/pages/map_page.dart';
 import 'package:herometrics/pages/search.dart';
@@ -139,7 +140,7 @@ class _HomeState extends State<Home> {
               onTap: () {},
             ),
             ListTile(
-              title: Row(
+              title: const Row(
                 children: [
                   Padding(
                     padding: EdgeInsets.only(right: 8.0),
@@ -164,7 +165,11 @@ class _HomeState extends State<Home> {
                   Text('Game Mode'),
                 ],
               ),
-              onTap: () {},
+              onTap: () {
+                Navigator.pop(context);
+                Navigator.push(context,
+                    MaterialPageRoute(builder: (context) => GamemodePage()));
+              },
             ),
             ListTile(
               title: const Row(

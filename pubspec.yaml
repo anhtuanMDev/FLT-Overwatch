@@ -58,10 +58,13 @@ flutter:
 
   # To add assets to your application, add an assets section, like this:
   assets:
+    - assets/images/maps/
     - assets/images/portraits/
+    - assets/images/gamemodes/
     - assets/images/skills/
     - assets/icons/
 
+    # Skill assets for tank heroes
     - assets/images/skills/tanks/dva/
     - assets/images/skills/tanks/doomfist/
     - assets/images/skills/tanks/junkerqueen/
@@ -75,6 +78,7 @@ flutter:
     - assets/images/skills/tanks/wreckingball/
     - assets/images/skills/tanks/zarya/
 
+    # Skill assets for DPS heroes
     - assets/images/skills/dps/ashe/
     - assets/images/skills/dps/bastion/
     - assets/images/skills/dps/cassidy/
@@ -94,6 +98,7 @@ flutter:
     - assets/images/skills/dps/venture/
     - assets/images/skills/dps/widowmaker/
 
+    # Skill assets for Supports heroes
     - assets/images/skills/supports/ana/
     - assets/images/skills/supports/baptiste/
     - assets/images/skills/supports/brigitte/

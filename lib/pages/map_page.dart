@@ -1,4 +1,8 @@
 import 'package:flutter/material.dart';
+import 'package:herometrics/components/card/map_card.dart';
+import 'package:herometrics/data/mapData.dart';
+import 'package:herometrics/models/map_model.dart';
+import 'package:herometrics/pages/gamemode_page.dart';
 import 'package:herometrics/pages/home.dart';
 import 'package:herometrics/pages/search.dart';
 
@@ -12,46 +16,61 @@ class MapPage extends StatefulWidget {
 class _MapPageState extends State<MapPage> {
   int category = 0;
   var categories = [
-    'All Mode',
+    'All Modes',
     'Control',
     'Escort',
     'Flashpoint',
     'Hybrid',
     'Push'
   ];
+  List<MapModel> scene = [];
 
-  @override
-  void initState() {
-    super.initState();
-  }
-
-  //Change agent in specific role visible on ui
+  //Change maps in specific game mode visible on ui
   void changeCategory(int index) {
     setState(() {
       category = index;
     });
   }
 
-  //Change agent visible on ui
-  void updateAgent(String role) {
-    switch (role) {
-      case 'All Roles':
-        setState(() {});
-        break;
-      case 'Tank':
-        setState(() {});
+  //Change game mode's map visible on ui
+  void updateMode(String mode) {
+    setState(() {
+      switch (mode) {
+        case 'All Modes':
+          scene = List.of(maps);
+          scene.sort((a, b) => a.name.compareTo(b.name));
+          break;
+        case 'Control':
+          scene = maps.where((a) => a.gameMode == "Control").toList();
+          scene.sort((a, b) => a.name.compareTo(b.name));
+          break;
+        case 'Escort':
+          scene = maps.where((a) => a.gameMode == "Escort").toList();
+          scene.sort((a, b) => a.name.compareTo(b.name));
+          break;
+        case 'Hybrid':
+          scene = maps.where((a) => a.gameMode == "Hybrid").toList();
+          scene.sort((a, b) => a.name.compareTo(b.name));
+          break;
+        case 'Push':
+          scene = maps.where((a) => a.gameMode == "Push").toList();
+          scene.sort((a, b) => a.name.compareTo(b.name));
+          break;
+        default:
+          scene = List.of(maps);
+          scene.sort((a, b) => a.name.compareTo(b.name));
+          break;
+      }
+    });
+  }
 
-        break;
-      case 'DPS':
-        setState(() {});
-        break;
-      case 'Support':
-        setState(() {});
-        break;
-      default:
-        setState(() {});
-        break;
-    }
+  @override
+  void initState() {
+    super.initState();
+    setState(() {
+      scene = List.from(maps); // Make sure scene is a copy of maps
+      scene.sort((a, b) => a.name.compareTo(b.name));
+    });
   }
 
   @override
@@ -111,14 +130,14 @@ class _MapPageState extends State<MapPage> {
               title: Row(
                 children: [
                   Padding(
-                    padding: EdgeInsets.only(right: 8.0),
+                    padding: const EdgeInsets.only(right: 8.0),
                     child: Image.asset(
                       'assets/icons/rein.png',
                       height: 25,
                       width: 25,
                     ),
                   ),
-                  Text('Heroes'),
+                  const Text('Heroes'),
                 ],
               ),
               onTap: () {
@@ -126,32 +145,38 @@ class _MapPageState extends State<MapPage> {
                 Navigator.push(
                     context,
                     MaterialPageRoute(
-                      builder: (context) => Home(),
+                      builder: (context) => const Home(),
                     ));
               },
             ),
             ListTile(
               title: Row(
                 children: [
-                  Padding(
+                  const Padding(
                     padding: EdgeInsets.only(right: 8.0),
                     child: Icon(Icons.autofps_select),
                   ),
-                  Text('Map'),
+                  const Text('Map'),
                 ],
               ),
             ),
             ListTile(
-              title: const Row(
+              title: Row(
                 children: [
-                  Padding(
+                  const Padding(
                     padding: EdgeInsets.only(right: 8.0),
                     child: Icon(Icons.games_outlined),
                   ),
-                  Text('Game Mode'),
+                  const Text('Game Mode'),
                 ],
               ),
-              onTap: () {},
+              onTap: () {
+                Navigator.pop(context);
+                Navigator.push(
+                    context,
+                    MaterialPageRoute(
+                        builder: (context) => const GamemodePage()));
+              },
             ),
             ListTile(
               title: const Row(
@@ -179,6 +204,67 @@ class _MapPageState extends State<MapPage> {
             ),
           ],
         ),
+      ),
+      body: Column(
+        children: [
+          Padding(
+            padding: const EdgeInsets.only(top: 10),
+            child: SizedBox(
+              height: 50, // Set a fixed height for the ListView
+              // Create hero's category button
+              child: ListView.builder(
+                scrollDirection: Axis.horizontal,
+                shrinkWrap: true,
+                itemCount: categories.length,
+                padding: const EdgeInsets.only(top: 8, left: 8, right: 8),
+                itemBuilder: (context, index) {
+                  return Padding(
+                    padding: const EdgeInsets.only(left: 5, right: 5),
+                    child: ElevatedButton(
+                      onPressed: () {
+                        changeCategory(index);
+                        updateMode(categories[index]);
+                      },
+                      style: ElevatedButton.styleFrom(
+                        backgroundColor: index == category
+                            ? Colors.orange.shade700
+                            : Colors.grey,
+                        shape: RoundedRectangleBorder(
+                          borderRadius: BorderRadius.circular(5),
+                        ),
+                      ),
+                      child: Padding(
+                        padding: const EdgeInsets.all(10),
+                        child: Text(
+                          categories[index],
+                          style: TextStyle(
+                              fontWeight: FontWeight.w700,
+                              color: index == category
+                                  ? Theme.of(context).colorScheme.inversePrimary
+                                  : Theme.of(context).colorScheme.surface),
+                        ),
+                      ),
+                    ),
+                  );
+                },
+              ),
+            ),
+          ),
+          SizedBox(
+            height: 25,
+          ),
+          Expanded(
+            child: GridView.count(
+              crossAxisCount: 2,
+              children: List.generate(scene.length, (index) {
+                return MapCard(
+                  deviceWidth: deviceWidth,
+                  map: scene[index],
+                );
+              }),
+            ),
+          ),
+        ],
       ),
     );
   }
