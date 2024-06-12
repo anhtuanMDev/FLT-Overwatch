@@ -1,6 +1,6 @@
 # herometrics
 
-A new Flutter project.
+A new Flutter project. Solving problem in provide player detail informations about the hero, game mode, map and more
 
 ## Getting Started
 
