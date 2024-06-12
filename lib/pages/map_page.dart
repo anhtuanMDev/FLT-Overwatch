@@ -6,6 +6,7 @@ import 'package:herometrics/pages/gamemode_page.dart';
 import 'package:herometrics/pages/home.dart';
 import 'package:herometrics/pages/patchnote.dart';
 import 'package:herometrics/pages/player_stats.dart';
+import 'package:herometrics/pages/replay_page.dart';
 import 'package:herometrics/pages/search.dart';
 
 class MapPage extends StatefulWidget {
@@ -151,25 +152,25 @@ class _MapPageState extends State<MapPage> {
                     ));
               },
             ),
-            ListTile(
+            const ListTile(
               title: Row(
                 children: [
-                  const Padding(
+                  Padding(
                     padding: EdgeInsets.only(right: 8.0),
                     child: Icon(Icons.autofps_select),
                   ),
-                  const Text('Map'),
+                  Text('Map'),
                 ],
               ),
             ),
             ListTile(
-              title: Row(
+              title: const Row(
                 children: [
-                  const Padding(
+                  Padding(
                     padding: EdgeInsets.only(right: 8.0),
                     child: Icon(Icons.games_outlined),
                   ),
-                  const Text('Game Mode'),
+                  Text('Game Mode'),
                 ],
               ),
               onTap: () {
@@ -191,6 +192,7 @@ class _MapPageState extends State<MapPage> {
                 ],
               ),
               onTap: () {
+                Navigator.pop(context);
                 Navigator.push(
                     context,
                     MaterialPageRoute(
@@ -209,10 +211,30 @@ class _MapPageState extends State<MapPage> {
                 ],
               ),
               onTap: () {
+                Navigator.pop(context);
                 Navigator.push(
                     context,
                     MaterialPageRoute(
                       builder: (context) => PlayerStats(),
+                    ));
+              },
+            ),
+            ListTile(
+              title: const Row(
+                children: [
+                  Padding(
+                    padding: EdgeInsets.only(right: 8.0),
+                    child: Icon(Icons.camera_outlined),
+                  ),
+                  Text('Replay'),
+                ],
+              ),
+              onTap: () {
+                Navigator.pop(context);
+                Navigator.push(
+                    context,
+                    MaterialPageRoute(
+                      builder: (context) => ReplayPage(),
                     ));
               },
             ),

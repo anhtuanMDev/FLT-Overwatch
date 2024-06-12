@@ -78,31 +78,31 @@ List<MapModel> maps = [
       image: "assets/images/maps/Suravasa.png"),
   MapModel(
       name: "Blizzard World",
-      gameMode: "Hybrid",
+      gameMode: "Hybird",
       image: "assets/images/maps/Blizzard_World.png"),
   MapModel(
       name: "Eichenwalde",
-      gameMode: "Hybrid",
+      gameMode: "Hybird",
       image: "assets/images/maps/Eichenwalde.png"),
   MapModel(
       name: "Hollywood",
-      gameMode: "Hybrid",
+      gameMode: "Hybird",
       image: "assets/images/maps/Hollywood.png"),
   MapModel(
       name: "King's Row",
-      gameMode: "Hybrid",
+      gameMode: "Hybird",
       image: "assets/images/maps/King_Row.png"),
   MapModel(
       name: "Midtown",
-      gameMode: "Hybrid",
+      gameMode: "Hybird",
       image: "assets/images/maps/Midtown.png"),
   MapModel(
       name: "Numbani",
-      gameMode: "Hybrid",
+      gameMode: "Hybird",
       image: "assets/images/maps/Numbani.png"),
   MapModel(
       name: "Paraíso",
-      gameMode: "Hybrid",
+      gameMode: "Hybird",
       image: "assets/images/maps/Paraíso.png"),
   MapModel(
       name: "Colosseo",

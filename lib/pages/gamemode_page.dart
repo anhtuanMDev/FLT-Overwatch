@@ -1,8 +1,13 @@
 import 'package:flutter/material.dart';
+import 'package:herometrics/components/card/gamemode_dropdown.dart';
+import 'package:herometrics/data/gameModeData.dart';
+import 'package:herometrics/models/gamemode_model.dart';
+import 'package:herometrics/models/mode_model.dart';
 import 'package:herometrics/pages/home.dart';
 import 'package:herometrics/pages/map_page.dart';
 import 'package:herometrics/pages/patchnote.dart';
 import 'package:herometrics/pages/player_stats.dart';
+import 'package:herometrics/pages/replay_page.dart';
 import 'package:herometrics/pages/search.dart';
 
 class GamemodePage extends StatefulWidget {
@@ -14,6 +19,7 @@ class GamemodePage extends StatefulWidget {
 
 class _GamemodePageState extends State<GamemodePage> {
   int category = 0;
+  Map<String, GamemodeModel?> selectedGameModes = {};
 
   @override
   Widget build(BuildContext context) {
@@ -130,6 +136,7 @@ class _GamemodePageState extends State<GamemodePage> {
                 ],
               ),
               onTap: () {
+                Navigator.pop(context);
                 Navigator.push(
                     context,
                     MaterialPageRoute(
@@ -148,6 +155,7 @@ class _GamemodePageState extends State<GamemodePage> {
                 ],
               ),
               onTap: () {
+                Navigator.pop(context);
                 Navigator.push(
                     context,
                     MaterialPageRoute(
@@ -155,18 +163,70 @@ class _GamemodePageState extends State<GamemodePage> {
                     ));
               },
             ),
+            ListTile(
+              title: const Row(
+                children: [
+                  Padding(
+                    padding: EdgeInsets.only(right: 8.0),
+                    child: Icon(Icons.camera_outlined),
+                  ),
+                  Text('Replay'),
+                ],
+              ),
+              onTap: () {
+                Navigator.pop(context);
+                Navigator.push(
+                    context,
+                    MaterialPageRoute(
+                      builder: (context) => ReplayPage(),
+                    ));
+              },
+            ),
           ],
         ),
       ),
-      body: Column(
-        children: [
-          Padding(
-            padding: const EdgeInsets.only(top: 10),
-            child: SizedBox(
-              height: 50, // Set a fixed height for the ListView
-            ),
-          ),
-        ],
+      body: SingleChildScrollView(
+        child: Column(
+          children: [
+            const SizedBox(height: 20),
+            ExpansionPanelList(
+              expansionCallback: (panelIndex, isExpanded) {
+                setState(() {
+                  modes[panelIndex].expand = isExpanded;
+                });
+              },
+              children: modes.map<ExpansionPanel>((GamemodeModel item) {
+                return ExpansionPanel(
+                  headerBuilder: (BuildContext context, bool isExpanded) {
+                    return ListTile(
+                      title: Text(item.name),
+                    );
+                  },
+                  body: Column(
+                    children: item.data.map((ModeModel data) {
+                      return Padding(
+                        padding: const EdgeInsets.only(
+                            left: 15, top: 10, bottom: 10),
+                        child: Row(
+                          children: [
+                            Image.asset(
+                              data.image,
+                              width: 30,
+                              height: 30,
+                            ),
+                            SizedBox(width: 15),
+                            Text(data.name),
+                          ],
+                        ),
+                      );
+                    }).toList(),
+                  ),
+                  isExpanded: item.expand,
+                );
+              }).toList(),
+            )
+          ],
+        ),
       ),
     );
   }

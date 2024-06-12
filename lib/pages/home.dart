@@ -6,6 +6,7 @@ import 'package:herometrics/pages/heroDetail.dart';
 import 'package:herometrics/pages/map_page.dart';
 import 'package:herometrics/pages/patchnote.dart';
 import 'package:herometrics/pages/player_stats.dart';
+import 'package:herometrics/pages/replay_page.dart';
 import 'package:herometrics/pages/search.dart';
 import 'package:herometrics/models/hero_model.dart';
 
@@ -184,6 +185,7 @@ class _HomeState extends State<Home> {
                 ],
               ),
               onTap: () {
+                Navigator.pop(context);
                 Navigator.push(
                     context,
                     MaterialPageRoute(
@@ -202,10 +204,30 @@ class _HomeState extends State<Home> {
                 ],
               ),
               onTap: () {
+                Navigator.pop(context);
                 Navigator.push(
                     context,
                     MaterialPageRoute(
                       builder: (context) => PlayerStats(),
+                    ));
+              },
+            ),
+            ListTile(
+              title: const Row(
+                children: [
+                  Padding(
+                    padding: EdgeInsets.only(right: 8.0),
+                    child: Icon(Icons.camera_outlined),
+                  ),
+                  Text('Replay'),
+                ],
+              ),
+              onTap: () {
+                Navigator.pop(context);
+                Navigator.push(
+                    context,
+                    MaterialPageRoute(
+                      builder: (context) => ReplayPage(),
                     ));
               },
             ),
