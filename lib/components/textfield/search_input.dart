@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:herometrics/data/heroes.dart'; // Assuming this is where the heroes list is defined
 import 'package:herometrics/models/hero_search.dart';
+import 'package:herometrics/pages/heroDetail.dart';
 
 class SearchInput extends StatefulWidget {
   final double height;
@@ -10,9 +11,7 @@ class SearchInput extends StatefulWidget {
 
   static List<HeroSearch> champ = heroes.map((hero) {
     return HeroSearch(
-      name: hero.name,
-      portrait: hero.image,
-    );
+        name: hero.name, portrait: hero.image, path: hero.dataPath);
   }).toList();
 
   @override
@@ -75,6 +74,11 @@ class _SearchInputState extends State<SearchInput> {
                         title: Text(hero.name),
                         onTap: () {
                           onSelected(hero);
+                          Navigator.push(context, MaterialPageRoute(
+                            builder: (context) {
+                              return Herodetail(dataPath: hero.path);
+                            },
+                          ));
                         },
                       ),
                     );
