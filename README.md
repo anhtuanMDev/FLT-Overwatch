@@ -1,16 +1,10 @@
 # herometrics
 
-A new Flutter project. Solving problem in provide player detail informations about the hero, game mode, map and more
+A new Flutter project. Help overwatch players have a more clear vision inside of Overwatch.
 
-## Getting Started
+#Problem
 
-This project is a starting point for a Flutter application.
+Overwatch is a big game with a huge player base but very poor when it com to provide information about heroes, maps, game mode, etc. Player has to gather informations from variety resource like overwatch fandom, wiki, streamers, etc without any confirmation if it still valid and correct in the newest verison of Overwatch.
 
-A few resources to get you started if this is your first Flutter project:
+So i want to build an app that can help players gain more knowledge about the game called Hero Metrics, the app can help player know all about the heroes numbers, favorite pick up, favorite maps, how difference gamemode work and many more. They can also check for new update of the game or seeing their ingame profile stats by using screen Patch Note, Player Stats implement Webview for Blizzard official website and Overbuff 
 
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
-
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
